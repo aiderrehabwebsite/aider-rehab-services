@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AIDER Rehab Services | Psychological & Developmental Support</title>
+    <title>AIDER Rehab Services | Child Development & Psychological Support</title>
 
     <meta name="description"
-          content="AIDER Rehab Services - Play Therapy, Behavioral Therapy, LD Remedial Training, Early Intervention, Parental Guidance and Counselling.">
+          content="AIDER Rehab Services provides child development, behavioural support, learning support, counselling, play therapy, early intervention and parent guidance.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,256 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================================================
+           AIDER ADDITIONAL STYLES
+           ========================================================= */
+
+        .long-section {
+            padding: 90px 0;
+        }
+
+        .content-width {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .intro-text {
+            max-width: 850px;
+            margin: 20px auto 0;
+            line-height: 1.8;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .programs-grid,
+        .profile-grid,
+        .talks-grid,
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 45px;
+        }
+
+        .program-card,
+        .profile-detail,
+        .talk-card,
+        .why-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 12px 35px rgba(20, 40, 70, 0.08);
+            border: 1px solid rgba(20, 40, 70, 0.07);
+        }
+
+        .program-card h3,
+        .profile-detail h3,
+        .talk-card h3,
+        .why-card h3 {
+            margin-top: 0;
+        }
+
+        .program-card p,
+        .profile-detail p,
+        .talk-card p,
+        .why-card p {
+            line-height: 1.75;
+        }
+
+        .program-number {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            opacity: .55;
+        }
+
+        .program-list {
+            padding-left: 20px;
+            line-height: 1.9;
+        }
+
+        .program-list li {
+            margin-bottom: 5px;
+        }
+
+        .profile-detail {
+            margin-top: 35px;
+        }
+
+        .profile-detail h2 {
+            margin-top: 0;
+        }
+
+        .profile-meta {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .profile-quote {
+            padding: 22px;
+            border-left: 4px solid #1d7c68;
+            background: #f5f9f7;
+            margin-top: 25px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .centre-detail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .centre-detail {
+            background: #fff;
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 12px 35px rgba(20, 40, 70, 0.08);
+        }
+
+        .centre-detail h3 {
+            margin-top: 0;
+        }
+
+        .service-category {
+            margin-top: 55px;
+        }
+
+        .service-category h3 {
+            margin-bottom: 20px;
+        }
+
+        .service-list-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .service-list-item {
+            padding: 16px 18px;
+            border-radius: 12px;
+            background: #f5f8f7;
+            font-weight: 600;
+        }
+
+        .founder-box {
+            background: linear-gradient(135deg, #0d3141, #176b60);
+            color: #fff;
+            border-radius: 24px;
+            padding: 50px;
+            margin-top: 40px;
+        }
+
+        .founder-box h2,
+        .founder-box h3 {
+            color: #fff;
+        }
+
+        .founder-box p {
+            line-height: 1.85;
+        }
+
+        .founder-quote {
+            font-size: 20px;
+            margin-top: 30px;
+            font-family: "Playfair Display", serif;
+        }
+
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,.15);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            background: #eef5f2;
+            color: #123f42;
+        }
+
+        .philosophy-box {
+            text-align: center;
+            padding: 55px 30px;
+            background: #f3f8f6;
+            border-radius: 24px;
+            margin-top: 50px;
+        }
+
+        .philosophy-box h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 28px;
+        }
+
+        .philosophy-box p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 900px) {
+            .programs-grid,
+            .profile-grid,
+            .talks-grid,
+            .why-grid,
+            .centre-detail-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .service-list-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .programs-grid,
+            .profile-grid,
+            .talks-grid,
+            .why-grid,
+            .centre-detail-grid,
+            .service-list-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .founder-box {
+                padding: 30px 22px;
+            }
+
+            .long-section {
+                padding: 65px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
 <header class="header">
 
@@ -43,9 +288,13 @@
 
             <a href="#services">Services</a>
 
+            <a href="#programs">Programs</a>
+
             <a href="#professionals">Professionals</a>
 
             <a href="#centres">Centres</a>
+
+            <a href="#aider-talks">AIDER Talks</a>
 
             <a href="#contact">Contact</a>
 
@@ -60,9 +309,16 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
 
 <main>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
 
 <section class="hero" id="home">
 
@@ -80,9 +336,12 @@
             </h1>
 
             <p class="hero-text">
-                Compassionate, individualized psychological and
-                developmental support for children, adolescents,
-                families and individuals.
+                Child Development • Behavioral Support • Learning • Counselling
+                <br><br>
+                Professional, individualized support for children, adolescents,
+                parents and families in a warm, supportive and child-friendly environment.
+                <br><br>
+                <strong>Established in October 2021</strong>
             </p>
 
             <div class="hero-buttons">
@@ -100,13 +359,13 @@
             <div class="hero-info">
 
                 <div>
-                    <strong>10+</strong>
-                    <small>Areas of Professional Work</small>
+                    <strong>2021</strong>
+                    <small>Established</small>
                 </div>
 
                 <div>
-                    <strong>2026</strong>
-                    <small>Current Professional Practice</small>
+                    <strong>2</strong>
+                    <small>Centres</small>
                 </div>
 
                 <div>
@@ -143,7 +402,6 @@
 
             </div>
 
-
             <div class="floating-card">
 
                 <div class="floating-icon">
@@ -164,7 +422,9 @@
 </section>
 
 
-<!-- ================= SERVICE STRIP ================= -->
+<!-- =========================================================
+     SERVICE STRIP
+     ========================================================= -->
 
 <section class="service-strip">
 
@@ -179,12 +439,12 @@
 
             <div>
                 <span>02</span>
-                <strong>Behavioral Therapy</strong>
+                <strong>Behaviour Therapy</strong>
             </div>
 
             <div>
                 <span>03</span>
-                <strong>LD Remedial Training</strong>
+                <strong>Remedial Training</strong>
             </div>
 
             <div>
@@ -194,7 +454,7 @@
 
             <div>
                 <span>05</span>
-                <strong>Parental Guidance</strong>
+                <strong>Parent Guidance</strong>
             </div>
 
         </div>
@@ -204,7 +464,9 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
 
 <section class="section" id="about">
 
@@ -224,7 +486,7 @@
 
                 <small>
                     Positive development through
-                    individualized psychological support.
+                    individualized support.
                 </small>
 
             </div>
@@ -240,56 +502,74 @@
 
             <h2>
                 Support that understands
-                <span>every individual.</span>
+                <span>every child.</span>
             </h2>
 
             <p>
-                AIDER Rehab Services provides psychological,
-                developmental and therapeutic support through
-                individualized intervention, assessment,
-                counselling and parent guidance.
+                AIDER Rehab Services is a child-focused psychological and
+                developmental support centre founded by
+                <strong>Greeshma Saravanan</strong>,
+                Founder &amp; Lead Psychologist | Play Therapist.
+            </p>
+
+            <p>
+                Established in October 2021, AIDER works with children,
+                adolescents, parents and families in a warm, supportive
+                and child-friendly environment.
+            </p>
+
+            <p>
+                With centres at Vadanappalli and Kara (Kodungallur),
+                AIDER provides both offline and online services,
+                making professional support more accessible to families.
+            </p>
+
+            <p>
+                Our approach is centred on understanding each child as
+                an individual and developing support based on their unique
+                needs, strengths and goals.
             </p>
 
             <div class="about-points">
 
                 <div>
                     <span>✓</span>
-                    <p>Psychological Counselling</p>
+                    <p>Communication and speech-related development</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Psychological Assessment</p>
+                    <p>Learning and academic skills</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Child & Adolescent Support</p>
+                    <p>Behaviour and emotional regulation</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Behavioural & Emotional Support</p>
+                    <p>Social interaction</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Developmental Assessment</p>
+                    <p>Attention and concentration</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Parent Guidance</p>
+                    <p>Developmental skills</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Psychoeducation</p>
+                    <p>School readiness</p>
                 </div>
 
                 <div>
                     <span>✓</span>
-                    <p>Individualized Psychological Support</p>
+                    <p>Self-help and independent living skills</p>
                 </div>
 
             </div>
@@ -301,7 +581,85 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================================================
+     OUR APPROACH
+     ========================================================= -->
+
+<section class="approach-section">
+
+    <div class="container approach-grid">
+
+        <div>
+
+            <div class="section-label light">
+                Our Approach
+            </div>
+
+            <h2>
+                Assessment.
+                <span>Understanding.</span>
+                Support.
+            </h2>
+
+        </div>
+
+        <div class="approach-content">
+
+            <p class="quote">
+                Assessment → Understanding → Goal Planning →
+                Intervention → Parent Guidance → Progress Monitoring
+            </p>
+
+            <p>
+                We focus on understanding the child, identifying their
+                strengths and needs, planning meaningful goals and
+                working together with families throughout the process.
+            </p>
+
+            <div class="approach-features">
+
+                <div>
+                    <span>01</span>
+                    <strong>Assessment</strong>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <strong>Understanding</strong>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <strong>Goal Planning</strong>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <strong>Intervention</strong>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <strong>Parent Guidance</strong>
+                </div>
+
+                <div>
+                    <span>06</span>
+                    <strong>Progress Monitoring</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
 
 <section class="section services-section" id="services">
 
@@ -316,16 +674,15 @@
                 </div>
 
                 <h2>
-                    Areas of
-                    <span>Professional Work</span>
+                    Child &amp; Family
+                    <span>Support Services</span>
                 </h2>
 
             </div>
 
             <p>
-                Individualized psychological and developmental
-                support designed around the needs of children,
-                adolescents, families and individuals.
+                AIDER offers professional support across developmental,
+                behavioural, educational, psychological and family needs.
             </p>
 
         </div>
@@ -341,12 +698,12 @@
                 <div class="service-icon">♡</div>
 
                 <h3>
-                    Psychological Counselling
+                    Behaviour Therapy
                 </h3>
 
                 <p>
-                    Professional psychological support tailored
-                    to individual needs and concerns.
+                    Individualized behavioural support for children
+                    and families.
                 </p>
 
                 <a href="#contact">
@@ -363,12 +720,12 @@
                 <div class="service-icon">◉</div>
 
                 <h3>
-                    Psychological Assessment
+                    Play Therapy
                 </h3>
 
                 <p>
-                    Psychological assessment and structured
-                    evaluation based on individual needs.
+                    Child-focused therapeutic support through
+                    structured play-based approaches.
                 </p>
 
                 <a href="#contact">
@@ -385,12 +742,12 @@
                 <div class="service-icon">⌁</div>
 
                 <h3>
-                    Child & Adolescent Support
+                    Remedial Training
                 </h3>
 
                 <p>
-                    Individualized support focused on children's
-                    and adolescents' psychological and developmental needs.
+                    Support for learning, academic and educational
+                    development.
                 </p>
 
                 <a href="#contact">
@@ -407,12 +764,12 @@
                 <div class="service-icon">♥</div>
 
                 <h3>
-                    Behavioural & Emotional Support
+                    Early Intervention
                 </h3>
 
                 <p>
-                    Support for behavioural and emotional concerns
-                    through individualized intervention.
+                    Early developmental support focused on communication,
+                    behaviour, sensory and self-help skills.
                 </p>
 
                 <a href="#contact">
@@ -429,12 +786,12 @@
                 <div class="service-icon">✦</div>
 
                 <h3>
-                    Developmental Assessment
+                    Speech &amp; Communication
                 </h3>
 
                 <p>
-                    Developmental assessment and support based on
-                    individual requirements.
+                    Speech &amp; Communication Guidance and
+                    Stimulation Programs.
                 </p>
 
                 <a href="#contact">
@@ -451,12 +808,12 @@
                 <div class="service-icon">☼</div>
 
                 <h3>
-                    Parent Guidance
+                    Sensory Skill Training
                 </h3>
 
                 <p>
-                    Guidance and psychoeducation to help families
-                    better understand and support their children.
+                    Activities supporting sensory processing,
+                    attention and body awareness.
                 </p>
 
                 <a href="#contact">
@@ -469,13 +826,113 @@
         </div>
 
 
-        <div class="services-more">
+        <div class="service-category">
 
-            <p>
-                Psychoeducation • Clinical Documentation •
-                Case History & Mental Status Examination •
-                Individualized Psychological Support
-            </p>
+            <h3>
+                Counselling &amp; Family Support
+            </h3>
+
+            <div class="service-list-grid">
+
+                <div class="service-list-item">
+                    Individual Counselling
+                </div>
+
+                <div class="service-list-item">
+                    Family Counselling
+                </div>
+
+                <div class="service-list-item">
+                    Parent Counselling
+                </div>
+
+                <div class="service-list-item">
+                    Parental Guidance
+                </div>
+
+                <div class="service-list-item">
+                    Behaviour Management
+                </div>
+
+                <div class="service-list-item">
+                    Child &amp; Family Support
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-category">
+
+            <h3>
+                Learning &amp; Educational Support
+            </h3>
+
+            <div class="service-list-grid">
+
+                <div class="service-list-item">
+                    Developmental Programs
+                </div>
+
+                <div class="service-list-item">
+                    Homework Support
+                </div>
+
+                <div class="service-list-item">
+                    Career Guidance
+                </div>
+
+                <div class="service-list-item">
+                    Exam Preparation
+                </div>
+
+                <div class="service-list-item">
+                    School Readiness
+                </div>
+
+                <div class="service-list-item">
+                    Learning Support
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-category">
+
+            <h3>
+                Parent &amp; Community Support
+            </h3>
+
+            <div class="service-list-grid">
+
+                <div class="service-list-item">
+                    Free Online Webinars
+                </div>
+
+                <div class="service-list-item">
+                    Awareness Classes
+                </div>
+
+                <div class="service-list-item">
+                    Free Parent Counselling
+                </div>
+
+                <div class="service-list-item">
+                    Parent Workshops
+                </div>
+
+                <div class="service-list-item">
+                    Teenage Workshops
+                </div>
+
+                <div class="service-list-item">
+                    Educational Programs
+                </div>
+
+            </div>
 
         </div>
 
@@ -484,79 +941,197 @@
 </section>
 
 
-<!-- ================= APPROACH ================= -->
+<!-- =========================================================
+     PROGRAMS
+     ========================================================= -->
 
-<section class="approach-section">
+<section class="section long-section" id="programs">
 
-    <div class="container approach-grid">
+    <div class="container">
 
-        <div>
+        <div class="text-center">
 
-            <div class="section-label light">
-                Our Professional Approach
+            <div class="section-label">
+                Our Programs
             </div>
 
             <h2>
-                Compassionate care.
-                <span>Individualized support.</span>
+                Structured programs for
+                <span>children and families.</span>
             </h2>
+
+            <p class="intro-text">
+                AIDER offers structured programs designed around the
+                developmental and educational needs of children and families.
+            </p>
 
         </div>
 
 
-        <div class="approach-content">
-
-            <p class="quote">
-                “Providing compassionate, individualized
-                psychological support while helping children,
-                families and individuals better understand their
-                needs and work towards positive development.”
-            </p>
+        <div class="programs-grid">
 
 
-            <div class="approach-features">
+            <div class="program-card">
 
-                <div>
-                    <span>01</span>
-                    <strong>Emotional Awareness</strong>
+                <div class="program-number">
+                    PROGRAM 01
                 </div>
 
-                <div>
-                    <span>02</span>
-                    <strong>Empathy</strong>
-                </div>
+                <h3>
+                    Early Developmental Program
+                </h3>
 
-                <div>
-                    <span>03</span>
-                    <strong>Active Listening</strong>
-                </div>
-
-                <div>
-                    <span>04</span>
-                    <strong>Effective Communication</strong>
-                </div>
-
-                <div>
-                    <span>05</span>
-                    <strong>Teamwork</strong>
-                </div>
-
-                <div>
-                    <span>06</span>
-                    <strong>Problem Solving</strong>
-                </div>
-
-                <div>
-                    <span>07</span>
-                    <strong>Critical Thinking</strong>
-                </div>
-
-                <div>
-                    <span>08</span>
-                    <strong>Decision Making</strong>
-                </div>
+                <p>
+                    For young children who need support with developmental
+                    skills, communication, behaviour, sensory needs,
+                    self-help skills and school readiness.
+                </p>
 
             </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 02
+                </div>
+
+                <h3>
+                    Educational Development Program
+                </h3>
+
+                <p>
+                    Focused on children experiencing difficulties with
+                    reading, writing, basic academic skills, attention,
+                    memory and learning habits.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 03
+                </div>
+
+                <h3>
+                    STUDYHUB
+                </h3>
+
+                <p>
+                    Homework Support &amp; Exam Preparation.
+                </p>
+
+                <ul class="program-list">
+
+                    <li>Independent homework habits</li>
+                    <li>Study skills</li>
+                    <li>Attention and focus</li>
+                    <li>Language and mathematics skills</li>
+                    <li>Logic and memory</li>
+                    <li>Better learning routines</li>
+                    <li>Healthy screen and mobile-use habits</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 04
+                </div>
+
+                <h3>
+                    Sensory Skill Training
+                </h3>
+
+                <p>
+                    Activities designed to support sensory processing,
+                    attention, body awareness and participation in
+                    everyday activities.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 05
+                </div>
+
+                <h3>
+                    Vacation Programs
+                </h3>
+
+                <p>
+                    Structured and engaging activities during school
+                    vacations, combining learning, developmental activities,
+                    social interaction and therapeutic support.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 06
+                </div>
+
+                <h3>
+                    Group Therapy Programs
+                </h3>
+
+                <p>
+                    Small-group activities that encourage communication,
+                    social interaction, cooperation, emotional development
+                    and functional skills.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 07
+                </div>
+
+                <h3>
+                    Parent Workshops
+                </h3>
+
+                <p>
+                    Practical sessions helping parents understand child
+                    development, behaviour, learning and effective ways
+                    of supporting their children at home.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">
+                    PROGRAM 08
+                </div>
+
+                <h3>
+                    Teenage Workshops
+                </h3>
+
+                <p>
+                    Age-appropriate programs addressing emotional development,
+                    social skills, study habits, self-awareness,
+                    communication and other challenges faced during adolescence.
+                </p>
+
+            </div>
+
 
         </div>
 
@@ -565,7 +1140,85 @@
 </section>
 
 
-<!-- ================= PROFESSIONALS ================= -->
+<!-- =========================================================
+     FOUNDER
+     ========================================================= -->
+
+<section class="section long-section" id="founder">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <div class="section-label">
+                Our Founder
+            </div>
+
+            <h2>
+                Greeshma Saravanan
+            </h2>
+
+            <p class="intro-text">
+                Founder &amp; Lead Psychologist | Play Therapist
+            </p>
+
+        </div>
+
+
+        <div class="founder-box">
+
+            <h2>
+                Greeshma Saravanan
+            </h2>
+
+            <h3>
+                Founder &amp; Lead Psychologist | Play Therapist
+            </h3>
+
+            <p>
+                <strong>
+                    MA Psychology | Post Graduate Certificate &amp;
+                    Diploma in Play Therapy
+                </strong>
+            </p>
+
+            <p>
+                Greeshma Saravanan is a Consultant Psychologist and
+                Play Therapist with 15+ years of professional experience
+                working with children, adolescents, parents and families.
+            </p>
+
+            <p>
+                Her areas of professional work include child development,
+                behavioural concerns, developmental and learning difficulties,
+                psychological assessment, play therapy, early intervention,
+                remedial training and parent and family counselling.
+            </p>
+
+            <p>
+                She founded AIDER Rehab Services in October 2021 with
+                the vision of creating a professional yet warm environment
+                where children can receive individualized support and
+                parents can feel understood, guided and involved in the
+                intervention process.
+            </p>
+
+            <p class="founder-quote">
+                “Understanding the Child.
+                Supporting the Family.
+                Building Skills for Life.”
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROFESSIONALS
+     ========================================================= -->
 
 <section class="section professionals-section"
          id="professionals">
@@ -575,13 +1228,19 @@
         <div class="center">
 
             <div class="section-label">
-                Our Professionals
+                Our Team
             </div>
 
             <h2>
                 Meet our
                 <span>Psychology Team</span>
             </h2>
+
+            <p>
+                AIDER is supported by a team of psychology professionals
+                working collaboratively to provide individualized support
+                for children and families.
+            </p>
 
         </div>
 
@@ -592,24 +1251,24 @@
             <article class="professional-card">
 
                 <div class="professional-photo">
-                    <span>FJ</span>
+                    <span>GS</span>
                 </div>
 
                 <div class="professional-content">
 
                     <span>
-                        CONSULTANT PSYCHOLOGIST
+                        FOUNDER &amp; LEAD PSYCHOLOGIST
                     </span>
 
                     <h3>
-                        Fathima Jahan
+                        Greeshma Saravanan
                     </h3>
 
                     <p>
-                        MSc Psychology
+                        Founder &amp; Lead Psychologist | Play Therapist
                     </p>
 
-                    <a href="#contact">
+                    <a href="#founder">
                         View Profile →
                     </a>
 
@@ -621,24 +1280,53 @@
             <article class="professional-card">
 
                 <div class="professional-photo">
-                    <span>NR</span>
+                    <span>FR</span>
                 </div>
 
                 <div class="professional-content">
 
                     <span>
-                        PSYCHOLOGY PROFESSIONAL
+                        CONSULTANT PSYCHOLOGIST
                     </span>
 
                     <h3>
-                        AIDER Professional
+                        Fathimathu Rameesa
                     </h3>
 
                     <p>
-                        Psychological Support
+                        M.Sc. Psychology
                     </p>
 
-                    <a href="#contact">
+                    <a href="#fathimathu">
+                        View Profile →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="professional-card">
+
+                <div class="professional-photo">
+                    <span>SR</span>
+                </div>
+
+                <div class="professional-content">
+
+                    <span>
+                        CONSULTANT PSYCHOLOGIST
+                    </span>
+
+                    <h3>
+                        Sreejal K. R.
+                    </h3>
+
+                    <p>
+                        MSc Psychology
+                    </p>
+
+                    <a href="#sreejal">
                         View Profile →
                     </a>
 
@@ -654,120 +1342,114 @@
 </section>
 
 
-<!-- ================= CENTRES ================= -->
+<!-- =========================================================
+     FATHIMATHU RAMEESA
+     ========================================================= -->
 
-<section class="centres-section" id="centres">
+<section class="section long-section" id="fathimathu">
 
-    <div class="container">
+    <div class="container content-width">
 
-        <div class="center">
-
-            <div class="section-label">
-                Clinical Experience
-            </div>
-
-            <h2>
-                Professional
-                <span>Experience</span>
-            </h2>
-
+        <div class="section-label">
+            Consultant Psychologist
         </div>
 
+        <h2>
+            Fathimathu Rameesa
+        </h2>
 
-        <div class="centres-grid">
+        <p class="profile-meta">
+            Consultant Psychologist
+        </p>
+
+        <p>
+            Fathimathu Rameesa is a Consultant Psychologist with an
+            academic background in Psychology and experience in
+            psychological counselling, assessment and child-focused
+            behavioural support.
+        </p>
+
+        <p>
+            She has been part of AIDER Rehab Services since February 2026,
+            supporting children, adolescents and families through
+            individualized, compassionate and client-centred
+            psychological intervention.
+        </p>
+
+        <p>
+            Her professional approach focuses on understanding individual
+            needs, identifying behavioural and emotional concerns, and
+            developing practical strategies that support psychological
+            well-being and overall development.
+        </p>
 
 
-            <div class="centre-card">
+        <div class="profile-detail">
 
-                <div class="centre-icon">+</div>
+            <h3>
+                Areas of Professional Work
+            </h3>
 
-                <div>
+            <ul class="program-list">
 
-                    <span>
-                        CLINICAL EXPERIENCE
-                    </span>
+                <li>Psychological Counselling</li>
+                <li>Psychometric Assessment</li>
+                <li>Child Behavioural Assessment</li>
+                <li>Behavioural Intervention</li>
+                <li>Parent Guidance</li>
+                <li>Child and Adolescent Support</li>
+                <li>Individualized Intervention Planning</li>
+                <li>Communication and Interpersonal Support</li>
 
-                    <h3>
-                        Mitra Clinic
-                    </h3>
+            </ul>
 
-                    <p>
-                        Padamugal, Ernakulam
-                    </p>
+            <h3>
+                Education
+            </h3>
 
-                </div>
+            <p>
+                <strong>M.Sc. Psychology</strong><br>
+                Mother Arts &amp; Science College, Peruvallur, Thrissur
+            </p>
 
+            <p>
+                <strong>B.Sc. Psychology</strong><br>
+                MES Asmabi College, Vemballur, Thrissur
+            </p>
+
+            <h3>
+                Professional Experience
+            </h3>
+
+            <p>
+                <strong>
+                    Consultant Psychologist — AIDER Rehab Services,
+                    Vadanappalli
+                </strong>
+                <br>
+                February 2026 – Present
+            </p>
+
+            <p>
+                Provides psychological and behavioural support to children,
+                adolescents and families, with a focus on assessment,
+                counselling and individualized intervention.
+            </p>
+
+            <p>
+                <strong>
+                    Volunteer Psychologist —
+                    Government Mental Health Centre, Thrissur
+                </strong>
+                <br>
+                October 2018 – February 2019
+            </p>
+
+            <div class="profile-quote">
+                “Creating a safe, supportive environment where every
+                individual is understood, heard and guided towards
+                positive development.”
             </div>
-
-
-            <div class="centre-card">
-
-                <div class="centre-icon">✚</div>
-
-                <div>
-
-                    <span>
-                        CLINICAL TRAINING
-                    </span>
-
-                    <h3>
-                        Compass Clinical Psychology Services
-                    </h3>
-
-                    <p>
-                        Thrissur East
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="centre-card">
-
-                <div class="centre-icon">+</div>
-
-                <div>
-
-                    <span>
-                        PSYCHOLOGY INTERN
-                    </span>
-
-                    <h3>
-                        Jubilee Mission Medical College
-                    </h3>
-
-                    <p>
-                        Thrissur
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="centre-card">
-
-                <div class="centre-icon">♡</div>
-
-                <div>
-
-                    <span>
-                        INTERACTIVE SESSION
-                    </span>
-
-                    <h3>
-                        Pope Paul Mercy Home
-                    </h3>
-
-                    <p>
-                        Peringandoor, Thrissur
-                    </p>
-
-                </div>
-
-            </div>
-
 
         </div>
 
@@ -776,7 +1458,580 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
+<!-- =========================================================
+     SREEJAL K R
+     ========================================================= -->
+
+<section class="section long-section" id="sreejal">
+
+    <div class="container content-width">
+
+        <div class="section-label">
+            Consultant Psychologist
+        </div>
+
+        <h2>
+            Sreejal K. R.
+        </h2>
+
+        <p class="profile-meta">
+            Consultant Psychologist
+        </p>
+
+        <p>
+            Sreejal K. R. is a Consultant Psychologist with postgraduate
+            training in Psychology and experience in counselling,
+            psychological support, child-focused interventions and
+            mental health services.
+        </p>
+
+        <p>
+            She has been part of AIDER Rehab Services since October 2025,
+            providing support to children and families through counselling,
+            psychological assessment, behavioural observation, parent
+            guidance and therapeutic activities.
+        </p>
+
+        <p>
+            Her professional approach is compassionate and client-centred,
+            with a focus on understanding individual needs and providing
+            practical psychological support.
+        </p>
+
+
+        <div class="profile-detail">
+
+            <h3>
+                Areas of Professional Work
+            </h3>
+
+            <ul class="program-list">
+
+                <li>Child Psychology</li>
+                <li>Behaviour Therapy</li>
+                <li>Behavioural Interventions</li>
+                <li>Psychological Counselling</li>
+                <li>Parent Guidance</li>
+                <li>Psychological Assessment</li>
+                <li>Behavioural Observation</li>
+                <li>Mental Health Support</li>
+                <li>Therapeutic Activities</li>
+                <li>Child and Family Support</li>
+
+            </ul>
+
+
+            <h3>
+                Education
+            </h3>
+
+            <p>
+                <strong>MSc Psychology</strong><br>
+                Sahrdaya College of Advanced Studies,
+                Kodakkara, Thrissur
+            </p>
+
+            <p>
+                <strong>BSc Psychology</strong><br>
+                MES Asmabi College, Vemballur, Thrissur
+            </p>
+
+
+            <h3>
+                Professional Experience
+            </h3>
+
+            <p>
+                <strong>
+                    Consultant Psychologist — AIDER Rehab Services
+                </strong>
+                <br>
+                October 2025 – Present
+            </p>
+
+            <p>
+                Provides counselling, psychological support,
+                behavioural observation, parent guidance and
+                child-focused interventions.
+            </p>
+
+
+            <h3>
+                Training &amp; Professional Development
+            </h3>
+
+            <ul class="program-list">
+
+                <li>
+                    Project Manoneetham
+                </li>
+
+                <li>
+                    Chethana Neuropsychiatry, Kozhikode
+                </li>
+
+                <li>
+                    Santhwana Institute
+                </li>
+
+                <li>
+                    REBT Course — 50 Hours
+                </li>
+
+                <li>
+                    Institution of Counselling and Transactional Analysis
+                </li>
+
+                <li>
+                    National Psychological Training Conference
+                </li>
+
+                <li>
+                    Two-day Data Analysis Workshop
+                </li>
+
+                <li>
+                    Training in Counselling and Psychometric Assessment
+                </li>
+
+            </ul>
+
+
+            <h3>
+                Research &amp; Academic Work
+            </h3>
+
+            <ul class="program-list">
+
+                <li>
+                    Impact of Television on Youngsters —
+                    Qualitative observational study, published
+                    (ISSN 3049-2092)
+                </li>
+
+                <li>
+                    Study on Coping Strategy and Resilience
+                    Among Social Media Users
+                </li>
+
+                <li>
+                    Use of Social Media, Resilience and Sense of
+                    Humor Among School and College Students
+                </li>
+
+            </ul>
+
+
+            <div class="profile-quote">
+                “Understanding each individual's needs, providing
+                compassionate support, and helping children and families
+                develop practical skills for positive growth.”
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TEAM APPROACH
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="center">
+
+            <div class="section-label">
+                Our Team
+            </div>
+
+            <h2>
+                Collaborative
+                <span>Professional Support</span>
+            </h2>
+
+            <p>
+                Our Consultant Psychologists work across areas including
+                behaviour management, early intervention, remedial training,
+                educational support, parent counselling, parental guidance,
+                child and family counselling and related psychological support.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AIDER TALKS
+     ========================================================= -->
+
+<section class="section long-section" id="aider-talks">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <div class="section-label">
+                AIDER TALKS
+            </div>
+
+            <h2>
+                Learn. Understand.
+                <span>Support.</span>
+            </h2>
+
+            <p class="intro-text">
+                Aider Talks is AIDER's parent-education and awareness
+                platform created to make useful psychological and
+                developmental information simple, practical and
+                accessible to families.
+            </p>
+
+        </div>
+
+
+        <div class="talks-grid">
+
+
+            <div class="talk-card">
+
+                <h3>
+                    Child Development
+                </h3>
+
+                <p>
+                    Information about child development and
+                    developmental needs.
+                </p>
+
+            </div>
+
+
+            <div class="talk-card">
+
+                <h3>
+                    Parenting &amp; Behaviour
+                </h3>
+
+                <p>
+                    Practical information about parenting,
+                    behaviour and parent guidance.
+                </p>
+
+            </div>
+
+
+            <div class="talk-card">
+
+                <h3>
+                    Learning Difficulties
+                </h3>
+
+                <p>
+                    Discussions around learning difficulties,
+                    school readiness and learning support.
+                </p>
+
+            </div>
+
+
+            <div class="talk-card">
+
+                <h3>
+                    Speech &amp; Communication
+                </h3>
+
+                <p>
+                    Useful information related to communication
+                    and speech development.
+                </p>
+
+            </div>
+
+
+            <div class="talk-card">
+
+                <h3>
+                    Daily Routines
+                </h3>
+
+                <p>
+                    Supporting children with routines and
+                    independent living skills.
+                </p>
+
+            </div>
+
+
+            <div class="talk-card">
+
+                <h3>
+                    Emotional &amp; Social Development
+                </h3>
+
+                <p>
+                    Awareness and educational content around
+                    emotional and social development.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="text-center">
+
+            <div class="social-buttons">
+
+                <a href="#contact">
+                    Watch Aider Talks on YouTube
+                </a>
+
+                <a href="#contact">
+                    Follow us on Facebook
+                </a>
+
+                <a href="#contact">
+                    Follow us on Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CENTRES
+     ========================================================= -->
+
+<section class="centres-section" id="centres">
+
+    <div class="container">
+
+        <div class="center">
+
+            <div class="section-label">
+                Our Centres
+            </div>
+
+            <h2>
+                Find AIDER
+                <span>near you</span>
+            </h2>
+
+            <p>
+                Offline and online support options are available
+                for selected services.
+            </p>
+
+        </div>
+
+
+        <div class="centre-detail-grid">
+
+
+            <div class="centre-detail">
+
+                <h3>
+                    Vadanappalli
+                </h3>
+
+                <p>
+                    <strong>
+                        AIDER Rehab Services
+                    </strong>
+                </p>
+
+                <p>
+                    Vadanappalli, Kerala
+                </p>
+
+                <a href="tel:+918606758746">
+                    📞 8606758746
+                </a>
+
+            </div>
+
+
+            <div class="centre-detail">
+
+                <h3>
+                    Kara
+                </h3>
+
+                <p>
+                    <strong>
+                        AIDER Rehab Services
+                    </strong>
+                </p>
+
+                <p>
+                    Kara, Kodungallur, Kerala
+                </p>
+
+                <a href="tel:+918606758746">
+                    📞 8606758746
+                </a>
+
+            </div>
+
+
+            <div class="centre-detail">
+
+                <h3>
+                    Online Support
+                </h3>
+
+                <p>
+                    Selected services are also available
+                    through online sessions.
+                </p>
+
+                <a href="#contact">
+                    Enquire Now →
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="text-center" style="margin-top:40px;">
+
+            <strong>
+                Open every day
+            </strong>
+
+            <br><br>
+
+            <a href="tel:+918606758746">
+                📞 8606758746
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY AIDER
+     ========================================================= -->
+
+<section class="section long-section">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <div class="section-label">
+                Why AIDER?
+            </div>
+
+            <h2>
+                Meaningful progress
+                <span>begins with understanding.</span>
+            </h2>
+
+            <p class="intro-text">
+                We work not only with the child, but also with the people
+                and environment around the child.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <h3>
+                    Understanding the Child
+                </h3>
+
+                <p>
+                    Each child is understood as an individual,
+                    with unique needs, strengths and goals.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Supporting the Family
+                </h3>
+
+                <p>
+                    Parents are an important part of the intervention
+                    process and are supported throughout the journey.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>
+                    Building Skills for Life
+                </h3>
+
+                <p>
+                    Support focuses on practical development,
+                    learning, communication and independence.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="philosophy-box">
+
+            <h3>
+                Our Philosophy
+            </h3>
+
+            <p>
+                “Every child has the potential to learn, grow and thrive —
+                with the right understanding and support.”
+            </p>
+
+            <br>
+
+            <strong>
+                Supporting Children.
+                Empowering Parents.
+                Strengthening Families.
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
 
 <section class="cta-section">
 
@@ -801,7 +2056,7 @@
 
 
         <a href="#contact" class="btn btn-white">
-            Contact Us →
+            Book an Appointment →
         </a>
 
     </div>
@@ -809,7 +2064,9 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
 
 <section class="section" id="contact">
 
@@ -828,9 +2085,9 @@
             </h2>
 
             <p>
-                Contact AIDER Rehab Services for information
-                about psychological support, developmental
-                interventions, counselling and related services.
+                Contact AIDER Rehab Services for information about
+                psychological support, developmental interventions,
+                counselling and related services.
             </p>
 
 
@@ -879,22 +2136,23 @@
             <div class="contact-item">
 
                 <div class="contact-icon">
-                    ✉
+                    ◉
                 </div>
 
                 <div>
 
                     <small>
-                        EXISTING CONTACT
+                        LOCATIONS
                     </small>
 
                     <p>
-                        aiderrehabservices@gmail.com
+                        Vadanappalli • Kara, Kodungallur
                     </p>
 
                 </div>
 
             </div>
+
 
         </div>
 
@@ -949,6 +2207,30 @@
                     </option>
 
                     <option>
+                        Behaviour Therapy
+                    </option>
+
+                    <option>
+                        Play Therapy
+                    </option>
+
+                    <option>
+                        Remedial Training
+                    </option>
+
+                    <option>
+                        Early Intervention
+                    </option>
+
+                    <option>
+                        Speech &amp; Communication Guidance
+                    </option>
+
+                    <option>
+                        Sensory Skill Training
+                    </option>
+
+                    <option>
                         Psychological Counselling
                     </option>
 
@@ -957,19 +2239,19 @@
                     </option>
 
                     <option>
-                        Child & Adolescent Support
-                    </option>
-
-                    <option>
-                        Behavioural & Emotional Support
-                    </option>
-
-                    <option>
-                        Developmental Assessment
-                    </option>
-
-                    <option>
                         Parent Guidance
+                    </option>
+
+                    <option>
+                        STUDYHUB
+                    </option>
+
+                    <option>
+                        Parent Workshop
+                    </option>
+
+                    <option>
+                        Teenage Workshop
                     </option>
 
                 </select>
@@ -985,7 +2267,9 @@
                 <button
                     type="submit"
                     class="btn btn-primary">
+
                     Send Enquiry →
+
                 </button>
 
             </form>
@@ -996,10 +2280,13 @@
 
 </section>
 
+
 </main>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
 
 <footer class="footer">
 
@@ -1012,9 +2299,9 @@
                  alt="AIDER Rehab Services">
 
             <p>
-                AIDER Rehab Services provides
-                individualized psychological and
-                developmental support.
+                AIDER Rehab Services provides professional,
+                individualized psychological and developmental
+                support for children, adolescents and families.
             </p>
 
         </div>
@@ -1026,10 +2313,33 @@
                 QUICK LINKS
             </h4>
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#professionals">Professionals</a>
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#programs">
+                Programs
+            </a>
+
+            <a href="#professionals">
+                Professionals
+            </a>
+
+            <a href="#centres">
+                Centres
+            </a>
+
+            <a href="#aider-talks">
+                AIDER Talks
+            </a>
 
         </div>
 
@@ -1041,15 +2351,19 @@
             </h4>
 
             <a href="#services">
-                Psychological Counselling
+                Behaviour Therapy
             </a>
 
             <a href="#services">
-                Psychological Assessment
+                Play Therapy
             </a>
 
             <a href="#services">
-                Child & Adolescent Support
+                Remedial Training
+            </a>
+
+            <a href="#services">
+                Early Intervention
             </a>
 
             <a href="#services">
@@ -1073,6 +2387,12 @@
                 aiderrehabservices@gmail.com
             </a>
 
+            <p>
+                Vadanappalli, Kerala
+                <br>
+                Kara, Kodungallur, Kerala
+            </p>
+
         </div>
 
 
@@ -1089,7 +2409,7 @@
             </p>
 
             <p>
-                Psychological & Developmental Support
+                Psychological &amp; Developmental Support
             </p>
 
         </div>
@@ -1099,46 +2419,56 @@
 </footer>
 
 
-<!-- ================= WHATSAPP ================= -->
+<!-- =========================================================
+     WHATSAPP
+     ========================================================= -->
 
 <a
     href="https://wa.me/918606758746"
     class="whatsapp-button"
     target="_blank"
+    rel="noopener"
     aria-label="Chat on WhatsApp">
 
-    <span>☏</span>
+    <span>
+        ☏
+    </span>
 
 </a>
 
 
+<!-- =========================================================
+     MENU SCRIPT
+     ========================================================= -->
+
 <script>
 
-const menuButton =
-    document.getElementById("menuButton");
+    const menuButton =
+        document.getElementById("menuButton");
 
-const navbar =
-    document.getElementById("navbar");
+    const navbar =
+        document.getElementById("navbar");
 
-menuButton.addEventListener("click", () => {
+    menuButton.addEventListener("click", () => {
 
-    navbar.classList.toggle("show");
-
-});
-
-
-document.querySelectorAll(".navbar a")
-.forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navbar.classList.remove("show");
+        navbar.classList.toggle("show");
 
     });
 
-});
+
+    document.querySelectorAll(".navbar a")
+        .forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navbar.classList.remove("show");
+
+            });
+
+        });
 
 </script>
+
 
 </body>
 </html>
