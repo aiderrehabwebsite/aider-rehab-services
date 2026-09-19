@@ -145,7 +145,7 @@ h1 span {
 }
 
 .nav-container {
-    min-height: 84px;
+    min-height: 100px;
 
     display: flex;
     align-items: center;
@@ -153,10 +153,17 @@ h1 span {
     gap: 30px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .logo img {
     width: 150px;
     height: 100px;
     object-fit: contain;
+    display: block;
 }
 
 .navbar {
