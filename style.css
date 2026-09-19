@@ -2341,3 +2341,238 @@ h1 span {
         font-size: 9px;
     }
 }
+/* ==========================================
+   GROWING PLANT ANIMATION
+========================================== */
+
+.growing-plant {
+    position: absolute;
+    width: 190px;
+    height: 230px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+/* Soil */
+
+.soil {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 120px;
+    height: 28px;
+    transform: translateX(-50%);
+    background: #7b4f2c;
+    border-radius: 50%;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.18),
+        inset 0 5px 8px rgba(255,255,255,0.12);
+}
+
+/* Stem */
+
+.plant-stem {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 7px;
+    height: 170px;
+    transform-origin: bottom;
+    transform: translateX(-50%) scaleY(0);
+    background: linear-gradient(
+        to right,
+        #278b35,
+        #61c53b,
+        #278b35
+    );
+    border-radius: 10px;
+    animation: stemGrow 4s ease-out infinite;
+}
+
+/* Leaves */
+
+.plant-leaf {
+    position: absolute;
+    width: 58px;
+    height: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #8be34d,
+        #35a92f
+    );
+
+    border-radius: 100% 0 100% 0;
+
+    opacity: 0;
+
+    transform-origin: bottom center;
+}
+
+/* Left leaves */
+
+.leaf-1 {
+    left: 42px;
+    bottom: 65px;
+    transform: rotate(-35deg) scale(0);
+    animation: leafGrow1 4s ease-out infinite;
+}
+
+.leaf-2 {
+    left: 48px;
+    bottom: 110px;
+    transform: rotate(-35deg) scale(0);
+    animation: leafGrow2 4s ease-out infinite;
+}
+
+/* Right leaves */
+
+.leaf-3 {
+    right: 38px;
+    bottom: 90px;
+    transform: scaleX(-1) rotate(-35deg) scale(0);
+    animation: leafGrow3 4s ease-out infinite;
+}
+
+.leaf-4 {
+    right: 45px;
+    bottom: 140px;
+    transform: scaleX(-1) rotate(-35deg) scale(0);
+    animation: leafGrow4 4s ease-out infinite;
+}
+
+/* Glow */
+
+.plant-glow {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+
+    left: 50%;
+    bottom: 65px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background: rgba(140,255,100,0.18);
+
+    filter: blur(18px);
+
+    animation: plantGlow 4s ease-in-out infinite;
+}
+
+
+/* ==========================================
+   GROW ANIMATIONS
+========================================== */
+
+@keyframes stemGrow {
+
+    0% {
+        transform: translateX(-50%) scaleY(0);
+    }
+
+    35% {
+        transform: translateX(-50%) scaleY(0.55);
+    }
+
+    65% {
+        transform: translateX(-50%) scaleY(1);
+    }
+
+    100% {
+        transform: translateX(-50%) scaleY(1);
+    }
+}
+
+
+@keyframes leafGrow1 {
+
+    0%, 25% {
+        opacity: 0;
+        transform: rotate(-35deg) scale(0);
+    }
+
+    45% {
+        opacity: 1;
+        transform: rotate(-35deg) scale(0.7);
+    }
+
+    65%, 100% {
+        opacity: 1;
+        transform: rotate(-25deg) scale(1);
+    }
+}
+
+
+@keyframes leafGrow2 {
+
+    0%, 38% {
+        opacity: 0;
+        transform: rotate(-35deg) scale(0);
+    }
+
+    55% {
+        opacity: 1;
+        transform: rotate(-35deg) scale(0.7);
+    }
+
+    70%, 100% {
+        opacity: 1;
+        transform: rotate(-20deg) scale(1);
+    }
+}
+
+
+@keyframes leafGrow3 {
+
+    0%, 48% {
+        opacity: 0;
+        transform: scaleX(-1) rotate(-35deg) scale(0);
+    }
+
+    65% {
+        opacity: 1;
+        transform: scaleX(-1) rotate(-35deg) scale(0.7);
+    }
+
+    80%, 100% {
+        opacity: 1;
+        transform: scaleX(-1) rotate(-20deg) scale(1);
+    }
+}
+
+
+@keyframes leafGrow4 {
+
+    0%, 58% {
+        opacity: 0;
+        transform: scaleX(-1) rotate(-35deg) scale(0);
+    }
+
+    72% {
+        opacity: 1;
+        transform: scaleX(-1) rotate(-35deg) scale(0.7);
+    }
+
+    85%, 100% {
+        opacity: 1;
+        transform: scaleX(-1) rotate(-20deg) scale(1);
+    }
+}
+
+
+@keyframes plantGlow {
+
+    0%, 100% {
+        opacity: 0.3;
+        transform: translateX(-50%) scale(0.7);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: translateX(-50%) scale(1.15);
+    }
+}
