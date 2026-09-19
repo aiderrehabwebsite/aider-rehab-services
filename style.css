@@ -563,7 +563,7 @@ h1 span {
     position: relative;
     z-index: 10;
 
-    margin-top: -55px;
+   margin-top: 0;
 }
 
 .service-strip-grid {
