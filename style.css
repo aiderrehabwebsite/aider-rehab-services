@@ -3244,3 +3244,368 @@ h1 span {
 .about-animated-card .soil {
     z-index: 10;
 }
+/* =========================================================
+   AIDER - PREMIUM CARE ORBIT ANIMATION
+   ========================================================= */
+
+.about-animated-card {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    border-radius: 35px;
+
+    background:
+        radial-gradient(
+            circle at 30% 20%,
+            rgba(255,255,255,.16),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #4caf32 0%,
+            #2c7547 52%,
+            #102f58 100%
+        );
+
+    box-shadow:
+        0 25px 60px rgba(15,45,70,.18);
+}
+
+.orbital-glow {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.20),
+            rgba(255,255,255,.08) 35%,
+            transparent 70%
+        );
+
+    filter: blur(2px);
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+    0%,100% {
+        opacity: .65;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.08);
+    }
+
+}
+
+.orbit {
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.25);
+    pointer-events: none;
+}
+
+.orbit-1 {
+    width: 190px;
+    height: 190px;
+    animation: orbitRotate 12s linear infinite;
+}
+
+.orbit-2 {
+    width: 285px;
+    height: 285px;
+    border-color: rgba(255,255,255,.18);
+    animation: orbitRotateReverse 18s linear infinite;
+}
+
+.orbit-3 {
+    width: 380px;
+    height: 380px;
+    border-color: rgba(255,255,255,.10);
+    animation: orbitRotate 26s linear infinite;
+}
+
+@keyframes orbitRotate {
+
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+}
+
+@keyframes orbitRotateReverse {
+
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+}
+
+.care-center {
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.care-icon {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 13px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+    color: #fff;
+
+    background: rgba(255,255,255,.13);
+
+    border: 1px solid rgba(255,255,255,.45);
+
+    box-shadow:
+        0 0 0 12px rgba(255,255,255,.035),
+        0 0 45px rgba(255,255,255,.20);
+
+    animation: heartPulse 3s ease-in-out infinite;
+}
+
+.care-center strong {
+    display: block;
+    font-size: 18px;
+}
+
+.care-center span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: .80;
+}
+
+@keyframes heartPulse {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+}
+
+.orbit-item {
+    position: absolute;
+    z-index: 12;
+
+    min-width: 75px;
+    padding: 10px 14px;
+
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+
+    background: rgba(255,255,255,.13);
+
+    border: 1px solid rgba(255,255,255,.32);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.12);
+
+    animation: floatingItem 4s ease-in-out infinite;
+}
+
+.orbit-item span {
+    display: block;
+    font-size: 18px;
+}
+
+.orbit-item strong {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.item-care {
+    left: 11%;
+    top: 17%;
+}
+
+.item-connect {
+    right: 10%;
+    top: 21%;
+    animation-delay: .8s;
+}
+
+.item-support {
+    left: 9%;
+    top: 47%;
+    animation-delay: 1.5s;
+}
+
+.item-thrive {
+    right: 9%;
+    top: 51%;
+    animation-delay: 2.2s;
+}
+
+@keyframes floatingItem {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+
+}
+
+.about-animated-card .about-card-content {
+    position: absolute;
+
+    left: 40px;
+    right: 40px;
+    bottom: 30px;
+
+    z-index: 30;
+
+    padding: 25px 30px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,.97);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+}
+
+.about-animated-card .about-card-content .about-card-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    color: #3aaa2f;
+}
+
+.about-animated-card .about-card-content h3 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 39px;
+    line-height: 1.05;
+
+    color: #12366d;
+}
+
+.about-animated-card .about-card-content h3 span {
+    color: #3aaa2f;
+}
+
+.about-animated-card .about-card-content p {
+    margin: 15px 0 14px;
+
+    color: #64748b;
+
+    line-height: 1.55;
+
+    font-size: 14px;
+}
+
+.growth-words {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    color: #3aaa2f;
+}
+
+.growth-words i {
+    font-style: normal;
+    color: #9aaa9c;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-animated-card {
+        min-height: 540px;
+    }
+
+    .orbit-3 {
+        width: 340px;
+        height: 340px;
+    }
+
+    .about-animated-card .about-card-content {
+
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+
+        padding: 22px;
+    }
+
+    .about-animated-card .about-card-content h3 {
+        font-size: 32px;
+    }
+
+    .item-care {
+        left: 5%;
+    }
+
+    .item-connect {
+        right: 5%;
+    }
+
+    .item-support {
+        left: 5%;
+    }
+
+    .item-thrive {
+        right: 5%;
+    }
+
+}
