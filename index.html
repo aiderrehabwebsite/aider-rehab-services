@@ -263,16 +263,14 @@
 
 <body>
 
-<!-- =========================================================
-     HEADER
-     ========================================================= -->
-
 <header class="header">
 
     <div class="container nav-container">
 
         <a href="#home" class="logo">
-           <img src="aider-logo.png" alt="AIDER Rehab Services" style="height: 100px; width: auto; object-fit: contain;">
+           <img src="aider-logo.png"
+                alt="AIDER Rehab Services"
+                style="height: 100px; width: auto; object-fit: contain;">
         </a>
 
         <button class="menu-button" id="menuButton">
@@ -308,16 +306,7 @@
 </header>
 
 
-<!-- =========================================================
-     MAIN
-     ========================================================= -->
-
 <main>
-
-
-<!-- =========================================================
-     HERO
-     ========================================================= -->
 
 <section class="hero" id="home">
 
@@ -379,89 +368,102 @@
 
         <div class="hero-visual">
 
-           <div class="hero-image-card">
+            <div class="hero-image-card">
 
-    <div class="hero-slider">
+                <div class="hero-slider">
 
-        <div class="hero-slide active">
-            <img src="learning-support.jpg" alt="Learning Support">
-            <div class="slide-caption">
-                <strong>Learning Support</strong>
-                <span>Learn. Grow. Thrive.</span>
+                    <div class="hero-slide active">
+                        <img src="learning-support.jpg" alt="Learning Support">
+                        <div class="slide-caption">
+                            <strong>Learning Support</strong>
+                            <span>Learn. Grow. Thrive.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="play-therapy.jpg" alt="Play Therapy">
+                        <div class="slide-caption">
+                            <strong>Play Therapy</strong>
+                            <span>Play. Learn. Grow.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="child-counselling.jpg" alt="Child Counselling">
+                        <div class="slide-caption">
+                            <strong>Child Counselling</strong>
+                            <span>Understanding Every Child.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="parent-counselling.jpg" alt="Parent Counselling">
+                        <div class="slide-caption">
+                            <strong>Parent Counselling</strong>
+                            <span>Supporting the Family.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="family-support.jpg" alt="Family Support">
+                        <div class="slide-caption">
+                            <strong>Family Support</strong>
+                            <span>Growing Together.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="child-support.jpg" alt="Child Support">
+                        <div class="slide-caption">
+                            <strong>Child Support</strong>
+                            <span>Every Child Matters.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="educational-support.jpg" alt="Educational Support">
+                        <div class="slide-caption">
+                            <strong>Educational Support</strong>
+                            <span>Building Skills for Life.</span>
+                        </div>
+                    </div>
+
+                    <button class="slider-arrow slider-prev"
+                            onclick="changeSlide(-1)">
+                        ‹
+                    </button>
+
+                    <button class="slider-arrow slider-next"
+                            onclick="changeSlide(1)">
+                        ›
+                    </button>
+
+                    <div class="slider-dots">
+                        <span class="slider-dot active"
+                              onclick="showSlide(0)"></span>
+
+                        <span class="slider-dot"
+                              onclick="showSlide(1)"></span>
+
+                        <span class="slider-dot"
+                              onclick="showSlide(2)"></span>
+
+                        <span class="slider-dot"
+                              onclick="showSlide(3)"></span>
+
+                        <span class="slider-dot"
+                              onclick="showSlide(4)"></span>
+
+                        <span class="slider-dot"
+                              onclick="showSlide(5)"></span>
+
+                        <span class="slider-dot"
+                              onclick="showSlide(6)"></span>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-
-        <div class="hero-slide">
-            <img src="play-therapy.jpg" alt="Play Therapy">
-            <div class="slide-caption">
-                <strong>Play Therapy</strong>
-                <span>Play. Learn. Grow.</span>
-            </div>
-        </div>
-
-        <div class="hero-slide">
-            <img src="child-counselling.jpg" alt="Child Counselling">
-            <div class="slide-caption">
-                <strong>Child Counselling</strong>
-                <span>Understanding Every Child.</span>
-            </div>
-        </div>
-
-        <div class="hero-slide">
-            <img src="parent-counselling.jpg" alt="Parent Counselling">
-            <div class="slide-caption">
-                <strong>Parent Counselling</strong>
-                <span>Supporting the Family.</span>
-            </div>
-        </div>
-
-        <div class="hero-slide">
-            <img src="family-support.jpg" alt="Family Support">
-            <div class="slide-caption">
-                <strong>Family Support</strong>
-                <span>Growing Together.</span>
-            </div>
-        </div>
-
-        <div class="hero-slide">
-            <img src="child-support.jpg" alt="Child Support">
-            <div class="slide-caption">
-                <strong>Child Support</strong>
-                <span>Every Child Matters.</span>
-            </div>
-        </div>
-
-        <div class="hero-slide">
-            <img src="educational-support.jpg" alt="Educational Support">
-            <div class="slide-caption">
-                <strong>Educational Support</strong>
-                <span>Building Skills for Life.</span>
-            </div>
-        </div>
-
-        <button class="slider-arrow slider-prev" onclick="changeSlide(-1)">
-            ‹
-        </button>
-
-        <button class="slider-arrow slider-next" onclick="changeSlide(1)">
-            ›
-        </button>
-
-        <div class="slider-dots">
-            <span class="slider-dot active" onclick="showSlide(0)"></span>
-            <span class="slider-dot" onclick="showSlide(1)"></span>
-            <span class="slider-dot" onclick="showSlide(2)"></span>
-            <span class="slider-dot" onclick="showSlide(3)"></span>
-            <span class="slider-dot" onclick="showSlide(4)"></span>
-            <span class="slider-dot" onclick="showSlide(5)"></span>
-            <span class="slider-dot" onclick="showSlide(6)"></span>
-        </div>
-
-    </div>
-
-</div>
-
-            
 
         </div>
 
@@ -469,10 +471,6 @@
 
 </section>
 
-
-<!-- =========================================================
-     SERVICE STRIP
-     ========================================================= -->
 
 <section class="service-strip">
 
@@ -522,102 +520,82 @@
 
         <div class="about-image">
 
-            <div class="about-pattern"></div>
-
             <div class="about-animated-card">
 
-    <div class="about-glow glow-one"></div>
-    <div class="about-glow glow-two"></div>
+                <div class="orbital-glow"></div>
 
-    <div class="growth-animation">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
 
-    <!-- Growth path -->
-    <div class="growth-path"></div>
+                <div class="care-center">
 
-    <!-- Milestones -->
-    <div class="growth-step step-care">
-        <div class="step-icon">♥</div>
-        <span>Care</span>
-    </div>
+                    <div class="care-icon">
+                        ♥
+                    </div>
 
-    <div class="growth-step step-support">
-        <div class="step-icon">●●</div>
-        <span>Support</span>
-    </div>
+                    <strong>
+                        Every Child
+                    </strong>
 
-    <div class="growth-step step-grow">
-        <div class="step-icon">🍃</div>
-        <span>Grow</span>
-    </div>
+                    <span>
+                        deserves to grow
+                    </span>
 
-    <div class="growth-step step-thrive">
-        <div class="step-icon">★</div>
-        <span>Thrive</span>
-    </div>
+                </div>
 
-    <!-- Main growing plant -->
-    <div class="plant-scene">
+                <div class="orbit-item item-care">
+                    <span>♡</span>
+                    <strong>Care</strong>
+                </div>
 
-        <div class="soil">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+                <div class="orbit-item item-connect">
+                    <span>✦</span>
+                    <strong>Connect</strong>
+                </div>
+
+                <div class="orbit-item item-support">
+                    <span>✓</span>
+                    <strong>Support</strong>
+                </div>
+
+                <div class="orbit-item item-thrive">
+                    <span>★</span>
+                    <strong>Thrive</strong>
+                </div>
+
+                <div class="about-card-content">
+
+                    <span class="about-card-label">
+                        AIDER REHAB SERVICES
+                    </span>
+
+                    <h3>
+                        Care.
+                        <span>Support.</span>
+                        Grow.
+                    </h3>
+
+                    <p>
+                        Helping every child discover their strengths
+                        and grow with confidence.
+                    </p>
+
+                    <div class="growth-words">
+                        <span>Care</span>
+                        <i>•</i>
+                        <span>Support</span>
+                        <i>•</i>
+                        <span>Grow</span>
+                        <i>•</i>
+                        <span>Thrive</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="plant-stem"></div>
-
-        <div class="plant-leaf leaf-left-1"></div>
-        <div class="plant-leaf leaf-right-1"></div>
-
-        <div class="plant-leaf leaf-left-2"></div>
-        <div class="plant-leaf leaf-right-2"></div>
-
-        <div class="plant-leaf leaf-top"></div>
-
-    </div>
-
-    <!-- Floating particles -->
-    <div class="growth-particle particle-1"></div>
-    <div class="growth-particle particle-2"></div>
-    <div class="growth-particle particle-3"></div>
-    <div class="growth-particle particle-4"></div>
-    <div class="growth-particle particle-5"></div>
-    <div class="growth-particle particle-6"></div>
-
-</div>
- </div>
-
-   <div class="about-card-content">
-
-    <span class="about-card-label">
-        AIDER REHAB SERVICES
-    </span>
-
-    <h3>
-        Care.
-        <span>Support.</span>
-        <strong>Grow.</strong>
-    </h3>
-
-    <p>
-        Helping every child discover their strengths
-        and grow with confidence.
-    </p>
-
-    <div class="growth-words">
-        <span>Care</span>
-        <i>•</i>
-        <span>Support</span>
-        <i>•</i>
-        <span>Grow</span>
-        <i>•</i>
-        <span>Thrive</span>
-    </div>
-
-</div>
-
-</div>
 
 
         <div class="about-content">
@@ -816,7 +794,6 @@
 
         <div class="services-grid">
 
-
             <article class="service-card featured">
 
                 <div class="service-number">01</div>
@@ -947,7 +924,6 @@
                 </a>
 
             </article>
-
 
         </div>
 
@@ -1095,7 +1071,6 @@
 
 
         <div class="programs-grid">
-
 
             <div class="program-card">
 
@@ -1258,7 +1233,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -1373,7 +1347,6 @@
 
         <div class="professionals-grid">
 
-
             <article class="professional-card">
 
                 <div class="professional-photo">
@@ -1459,7 +1432,6 @@
                 </div>
 
             </article>
-
 
         </div>
 
@@ -1825,7 +1797,6 @@
 
         <div class="talks-grid">
 
-
             <div class="talk-card">
 
                 <h3>
@@ -1909,7 +1880,6 @@
 
             </div>
 
-
         </div>
 
 
@@ -1966,7 +1936,6 @@
 
 
         <div class="centre-detail-grid">
-
 
             <div class="centre-detail">
 
@@ -2031,7 +2000,6 @@
 
             </div>
 
-
         </div>
 
 
@@ -2083,7 +2051,6 @@
 
         <div class="why-grid">
 
-
             <div class="why-card">
 
                 <h3>
@@ -2124,7 +2091,6 @@
                 </p>
 
             </div>
-
 
         </div>
 
@@ -2197,7 +2163,6 @@
 <section class="section" id="contact">
 
     <div class="container contact-grid">
-
 
         <div class="contact-info">
 
@@ -2278,7 +2243,6 @@
                 </div>
 
             </div>
-
 
         </div>
 
@@ -2406,7 +2370,6 @@
 
 </section>
 
-
 </main>
 
 
@@ -2417,7 +2380,6 @@
 <footer class="footer">
 
     <div class="container footer-grid">
-
 
         <div class="footer-brand">
 
@@ -2521,7 +2483,6 @@
 
         </div>
 
-
     </div>
 
 
@@ -2595,12 +2556,22 @@
 
 </script>
 
+
+<!-- =========================================================
+     HERO SLIDER SCRIPT
+     ========================================================= -->
+
 <script>
+
 let currentSlide = 0;
 let slideTimer;
 
-const slides = document.querySelectorAll(".hero-slide");
-const dots = document.querySelectorAll(".slider-dot");
+const slides =
+    document.querySelectorAll(".hero-slide");
+
+const dots =
+    document.querySelectorAll(".slider-dot");
+
 
 function showSlide(index) {
 
@@ -2613,34 +2584,51 @@ function showSlide(index) {
     }
 
     slides.forEach(slide => {
+
         slide.classList.remove("active");
+
     });
 
     dots.forEach(dot => {
+
         dot.classList.remove("active");
+
     });
 
     slides[index].classList.add("active");
+
     dots[index].classList.add("active");
 
     currentSlide = index;
+
 }
 
+
 function changeSlide(direction) {
+
     showSlide(currentSlide + direction);
+
     resetSlider();
+
 }
+
 
 function resetSlider() {
 
     clearInterval(slideTimer);
 
     slideTimer = setInterval(() => {
+
         showSlide(currentSlide + 1);
+
     }, 4000);
+
 }
 
+
 resetSlider();
+
 </script>
+
 </body>
 </html>
