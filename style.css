@@ -4283,3 +4283,791 @@ h1 span {
         0 0 12px #00ffff,
         0 0 25px rgba(0,255,180,.65);
 }
+/* =========================================================
+   AIDER — PREMIUM NEON GLASS THEME
+   CYAN • BLUE • GREEN
+   ========================================================= */
+
+
+/* =========================================================
+   HERO MAIN BACKGROUND
+   ========================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    background:
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(0, 255, 220, .34),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 72% 75%,
+            rgba(0, 140, 255, .34),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 12% 82%,
+            rgba(0, 255, 150, .25),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #f7ffff 0%,
+            #d8ffff 23%,
+            #69e4e9 48%,
+            #08a9d2 72%,
+            #0753a3 100%
+        );
+}
+
+
+/* =========================================================
+   HERO GLOSS
+   ========================================================= */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    top: -300px;
+    right: -180px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.62),
+            rgba(0,255,220,.20) 35%,
+            transparent 70%
+        );
+
+    filter: blur(12px);
+
+    z-index: -1;
+
+    animation:
+        heroGlow 8s ease-in-out infinite;
+}
+
+
+@keyframes heroGlow {
+
+    0%,100% {
+        transform: scale(1);
+        opacity: .65;
+    }
+
+    50% {
+        transform: scale(1.18);
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   LOWER GLOW
+   ========================================================= */
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    left: -250px;
+    bottom: -330px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,255,150,.38),
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    z-index: -1;
+
+    animation:
+        lowerGlow 9s ease-in-out infinite;
+}
+
+
+@keyframes lowerGlow {
+
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+}
+
+
+/* =========================================================
+   GLOWING CURVES
+   ========================================================= */
+
+.hero-grid::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 560px;
+    height: 560px;
+
+    right: -260px;
+    bottom: -350px;
+
+    border-radius: 50%;
+
+    border:
+        2px solid rgba(255,255,255,.65);
+
+    box-shadow:
+        0 0 18px rgba(0,255,220,.70),
+        0 0 40px rgba(0,190,255,.40);
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+.hero-grid::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 720px;
+    height: 720px;
+
+    right: -360px;
+    bottom: -470px;
+
+    border-radius: 50%;
+
+    border:
+        2px solid rgba(0,255,170,.50);
+
+    box-shadow:
+        0 0 25px rgba(0,255,170,.40);
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+}
+
+
+.hero-content .eyebrow {
+
+    color: #063c83;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-content h1 {
+
+    color: #071f70;
+
+    text-shadow:
+        0 4px 25px rgba(0,80,170,.10);
+}
+
+
+.hero-content h1 span {
+
+    color: #35b52c;
+
+}
+
+
+.hero-text {
+
+    color: #164677;
+
+}
+
+
+/* =========================================================
+   HERO IMAGE — GLASS BORDER
+   ========================================================= */
+
+.hero-image-card {
+
+    position: relative;
+
+    z-index: 5;
+
+    padding: 8px;
+
+    border-radius: 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.95),
+            #00f5d4,
+            #00a8ff,
+            #38ff65
+        );
+
+    box-shadow:
+
+        0 25px 70px
+        rgba(0,70,160,.30),
+
+        0 0 35px
+        rgba(0,255,220,.30);
+}
+
+
+.hero-image-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -5px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #ffffff,
+            #00ffff,
+            #008cff,
+            #39ff62
+        );
+
+    filter: blur(9px);
+
+    opacity: .65;
+
+    z-index: -1;
+
+    animation:
+        imageGlow 5s linear infinite;
+}
+
+
+@keyframes imageGlow {
+
+    0%,100% {
+        opacity: .55;
+    }
+
+    50% {
+        opacity: .95;
+    }
+
+}
+
+
+.hero-slider {
+
+    border-radius: 38px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO ARROWS
+   ========================================================= */
+
+.slider-arrow {
+
+    background:
+        rgba(255,255,255,.90) !important;
+
+    color:
+        #073c87 !important;
+
+    border:
+        1px solid rgba(255,255,255,.80) !important;
+
+    box-shadow:
+        0 8px 25px rgba(0,70,150,.18);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+}
+
+
+.slider-arrow:hover {
+
+    background:
+        #ffffff !important;
+
+    box-shadow:
+        0 0 20px rgba(0,255,220,.40);
+}
+
+
+/* =========================================================
+   SLIDER DOTS
+   ========================================================= */
+
+.slider-dot {
+
+    background:
+        rgba(255,255,255,.70) !important;
+
+    box-shadow:
+        0 0 8px rgba(255,255,255,.40);
+}
+
+
+.slider-dot.active {
+
+    background:
+        #38d936 !important;
+
+    box-shadow:
+        0 0 12px #38ff65,
+        0 0 25px rgba(0,255,100,.60);
+}
+
+
+/* =========================================================
+   SLIDE CAPTION
+   ========================================================= */
+
+.slide-caption {
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,35,75,.75)
+        ) !important;
+}
+
+
+.slide-caption strong {
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.30);
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.btn-primary {
+
+    background:
+        linear-gradient(
+            135deg,
+            #20f04d,
+            #31c52c
+        ) !important;
+
+    color:
+        #063438 !important;
+
+    border:
+        1px solid rgba(255,255,255,.60) !important;
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(30,220,60,.35),
+
+        0 0 25px
+        rgba(0,255,100,.18);
+}
+
+
+.btn-primary:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(20,220,60,.50),
+
+        0 0 35px
+        rgba(0,255,100,.30);
+}
+
+
+.btn-outline {
+
+    background:
+        rgba(255,255,255,.72) !important;
+
+    color:
+        #073477 !important;
+
+    border:
+        1px solid
+        rgba(0,80,170,.20) !important;
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+}
+
+
+/* =========================================================
+   HERO STATS — GLASS CARD
+   ========================================================= */
+
+.hero-info {
+
+    position: relative;
+
+    z-index: 5;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.30),
+            rgba(255,255,255,.10)
+        ) !important;
+
+    border:
+        1px solid
+        rgba(255,255,255,.55) !important;
+
+    border-radius:
+        22px !important;
+
+    box-shadow:
+
+        0 15px 45px
+        rgba(0,80,150,.15),
+
+        inset 0 1px 0
+        rgba(255,255,255,.55);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+}
+
+
+.hero-info div {
+
+    border-color:
+        rgba(255,255,255,.35) !important;
+}
+
+
+.hero-info strong {
+
+    color:
+        #073477 !important;
+}
+
+
+.hero-info small {
+
+    color:
+        #245577 !important;
+}
+
+
+/* =========================================================
+   SERVICE STRIP — GLASS NEON
+   ========================================================= */
+
+.service-strip {
+
+    position: relative;
+
+    z-index: 20;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,55,130,.92),
+            rgba(0,140,190,.90),
+            rgba(0,190,180,.88),
+            rgba(20,150,75,.90)
+        ) !important;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.40);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.25);
+
+    box-shadow:
+
+        0 -8px 30px
+        rgba(0,200,220,.25),
+
+        0 10px 35px
+        rgba(0,80,150,.20);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+}
+
+
+.service-strip::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -2px;
+
+    left: 8%;
+    right: 8%;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #00ffff,
+            #39ff65,
+            #00ffff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 12px #00ffff,
+        0 0 25px rgba(0,255,180,.65);
+}
+
+
+.service-strip-grid {
+
+    background:
+        transparent !important;
+}
+
+
+.service-strip-grid > div {
+
+    color:
+        #ffffff !important;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.20);
+
+    transition:
+        .3s ease;
+}
+
+
+.service-strip-grid > div:hover {
+
+    background:
+        rgba(255,255,255,.10);
+
+    transform:
+        translateY(-2px);
+}
+
+
+.service-strip-grid span {
+
+    color:
+        #70ffb0 !important;
+
+    text-shadow:
+        0 0 10px
+        rgba(50,255,150,.60);
+}
+
+
+.service-strip-grid strong {
+
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================================================
+   FLOATING NEON LIGHTS
+   ========================================================= */
+
+.hero-visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    top: 12%;
+    right: 3%;
+
+    border-radius: 50%;
+
+    background:
+        #39ff82;
+
+    box-shadow:
+
+        0 0 10px #39ff82,
+        0 0 30px #39ff82,
+        0 0 60px rgba(0,255,120,.70);
+
+    animation:
+        neonFloat 3s ease-in-out infinite;
+}
+
+
+.hero-visual::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    right: 12%;
+    bottom: 12%;
+
+    border-radius: 50%;
+
+    background:
+        #00eaff;
+
+    box-shadow:
+
+        0 0 12px #00eaff,
+        0 0 35px #00eaff;
+
+    animation:
+        neonFloat 4s ease-in-out infinite reverse;
+}
+
+
+@keyframes neonFloat {
+
+    0%,100% {
+
+        transform:
+            translateY(0)
+            scale(1);
+
+        opacity: .65;
+    }
+
+    50% {
+
+        transform:
+            translateY(-20px)
+            scale(1.35);
+
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+
+        background:
+
+            radial-gradient(
+                circle at 80% 15%,
+                rgba(0,255,220,.35),
+                transparent 30%
+            ),
+
+            linear-gradient(
+                160deg,
+                #f5ffff,
+                #8debed 45%,
+                #008fd0 100%
+            );
+    }
+
+
+    .hero-image-card {
+
+        border-radius:
+            30px;
+    }
+
+
+    .hero-slider {
+
+        border-radius:
+            25px;
+    }
+
+
+    .service-strip-grid {
+
+        grid-template-columns:
+            1fr 1fr !important;
+    }
+
+
+    .service-strip-grid > div {
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.18);
+    }
+
+}
