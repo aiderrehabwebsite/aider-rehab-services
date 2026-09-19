@@ -1676,8 +1676,8 @@ h1 span {
     }
 
     .service-strip {
-        margin-top: -30px;
-    }
+    margin-top: 24px;
+}
 
     .service-strip-grid {
         grid-template-columns: 1fr 1fr;
