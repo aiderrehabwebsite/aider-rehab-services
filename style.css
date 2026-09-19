@@ -3220,3 +3220,27 @@ h1 span {
 .about-animated-card .about-card-content {
     z-index: 10;
 }
+/* FINAL FIX - FULL GROWING PLANT VISIBILITY */
+
+.about-animated-card .plant-scene {
+    bottom: 205px;
+    z-index: 8;
+}
+
+.about-animated-card .plant-stem {
+    background: linear-gradient(
+        to right,
+        #1f7d2d,
+        #9bea55,
+        #2f9f32
+    );
+    box-shadow: 0 0 8px rgba(155, 235, 85, 0.35);
+}
+
+.about-animated-card .plant-leaf {
+    z-index: 9;
+}
+
+.about-animated-card .soil {
+    z-index: 10;
+}
