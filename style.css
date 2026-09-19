@@ -3175,3 +3175,49 @@ h1 span {
         width: 230px;
     }
 }
+/* Fix About section layout */
+
+.about-section,
+.about-container,
+.about-grid {
+    position: relative;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+}
+
+.about-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    min-width: 0;
+}
+
+.about-animated-card {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+}
