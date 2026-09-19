@@ -4148,3 +4148,138 @@ h1 span {
     }
 
 }
+/* =========================================================
+   AIDER - GLOSSY SERVICE STRIP
+   ========================================================= */
+
+.service-strip {
+    position: relative;
+    z-index: 10;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 45, 120, .88),
+            rgba(0, 145, 190, .82),
+            rgba(0, 190, 170, .78),
+            rgba(20, 145, 70, .82)
+        ) !important;
+
+    border-top: 1px solid rgba(255,255,255,.35);
+    border-bottom: 1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 -8px 30px rgba(0, 190, 220, .20),
+        0 8px 30px rgba(0, 80, 150, .20);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+
+.service-strip-grid {
+    background: transparent !important;
+}
+
+
+.service-strip-grid > div {
+    color: #ffffff !important;
+
+    border-right:
+        1px solid rgba(255,255,255,.20);
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+.service-strip-grid > div:last-child {
+    border-right: none;
+}
+
+
+.service-strip-grid > div:hover {
+    background: rgba(255,255,255,.10);
+
+    transform: translateY(-2px);
+}
+
+
+.service-strip-grid span {
+    color: #6dffb0 !important;
+
+    text-shadow:
+        0 0 10px rgba(50,255,150,.55);
+}
+
+
+.service-strip-grid strong {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   HERO INFO - GLASS CARD
+   ========================================================= */
+
+.hero-info {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.22),
+            rgba(255,255,255,.08)
+        ) !important;
+
+    border:
+        1px solid rgba(255,255,255,.45) !important;
+
+    box-shadow:
+        0 15px 45px rgba(0,80,150,.16),
+        inset 0 1px 0 rgba(255,255,255,.35);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+
+.hero-info div {
+    border-color:
+        rgba(255,255,255,.35) !important;
+}
+
+
+.hero-info strong {
+    color: #073477 !important;
+}
+
+
+/* =========================================================
+   EXTRA NEON GLOW
+   ========================================================= */
+
+.service-strip::before {
+    content: "";
+
+    position: absolute;
+
+    left: 10%;
+    right: 10%;
+    top: -2px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #00ffff,
+            #39ff68,
+            #00ffff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 12px #00ffff,
+        0 0 25px rgba(0,255,180,.65);
+}
