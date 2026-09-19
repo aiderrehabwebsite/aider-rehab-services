@@ -5071,3 +5071,15 @@ h1 span {
     }
 
 }
+/* =========================================================
+   FINAL GAP BETWEEN HERO AND SERVICE STRIP
+   ========================================================= */
+
+.service-strip {
+    position: relative !important;
+
+    top: 24px !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
+}
