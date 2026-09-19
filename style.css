@@ -145,7 +145,7 @@ h1 span {
 }
 
 .nav-container {
-    min-height: 100px;
+    min-height: 110px;
 
     display: flex;
     align-items: center;
@@ -247,7 +247,7 @@ h1 span {
     position: relative;
 
     min-height: 820px;
-    padding-top: 84px;
+    padding-top: 110px;
 
     display: flex;
     align-items: center;
