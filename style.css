@@ -5748,3 +5748,7 @@ h1 span {
 .whatsapp-notification {
     display: none !important;
 }
+/* Reduce gap between WhatsApp button and label */
+.whatsapp-label {
+    margin-top: 2px !important;
+}
