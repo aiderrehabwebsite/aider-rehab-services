@@ -5752,3 +5752,12 @@ h1 span {
 .whatsapp-label {
     margin-top: 2px !important;
 }
+/* Remove Chat with us label */
+.whatsapp-label {
+    display: none !important;
+}
+
+/* Keep WhatsApp widget compact */
+.whatsapp-widget {
+    height: 65px !important;
+}
