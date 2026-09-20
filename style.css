@@ -6077,3 +6077,7 @@ h1 span {
     }
 
 }
+/* Reduce gap between header and hero */
+.hero {
+    padding-top: 35px !important;
+}
