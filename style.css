@@ -5744,3 +5744,7 @@ h1 span {
     }
 
 }
+/* Remove WhatsApp notification red dot */
+.whatsapp-notification {
+    display: none !important;
+}
