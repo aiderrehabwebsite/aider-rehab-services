@@ -5220,3 +5220,527 @@ h1 span {
     }
 
 }
+/* =========================================================
+   AIDER PREMIUM WHATSAPP WIDGET
+   ========================================================= */
+
+.whatsapp-widget {
+
+    position: fixed;
+
+    right: 28px;
+    bottom: 24px;
+
+    width: 90px;
+    height: 120px;
+
+    z-index: 99999;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    flex-direction: column;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MAIN WHATSAPP BUTTON
+   ========================================================= */
+
+.whatsapp-button {
+
+    position: relative;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            145deg,
+            #25d366,
+            #10b94f
+        );
+
+    border:
+        2px solid
+        rgba(255,255,255,.85);
+
+    box-shadow:
+
+        0 8px 25px
+        rgba(0,190,90,.35),
+
+        0 0 0 0
+        rgba(37,211,102,.60);
+
+    pointer-events: auto;
+
+    animation:
+        whatsappPulse 2.2s infinite;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.whatsapp-button:hover {
+
+    transform:
+        scale(1.12);
+
+    box-shadow:
+
+        0 12px 35px
+        rgba(0,190,90,.50),
+
+        0 0 35px
+        rgba(37,211,102,.65);
+}
+
+
+/* =========================================================
+   WHATSAPP ICON
+   ========================================================= */
+
+.whatsapp-icon {
+
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.whatsapp-icon svg {
+
+    width: 31px;
+    height: 31px;
+
+    fill: #ffffff;
+
+    filter:
+        drop-shadow(
+            0 2px 3px
+            rgba(0,0,0,.12)
+        );
+}
+
+
+/* =========================================================
+   PULSE ANIMATION
+   ========================================================= */
+
+@keyframes whatsappPulse {
+
+    0% {
+
+        box-shadow:
+
+            0 8px 25px
+            rgba(0,190,90,.35),
+
+            0 0 0 0
+            rgba(37,211,102,.60);
+    }
+
+    60% {
+
+        box-shadow:
+
+            0 8px 25px
+            rgba(0,190,90,.35),
+
+            0 0 0 18px
+            rgba(37,211,102,0);
+    }
+
+    100% {
+
+        box-shadow:
+
+            0 8px 25px
+            rgba(0,190,90,.35),
+
+            0 0 0 0
+            rgba(37,211,102,0);
+    }
+
+}
+
+
+/* =========================================================
+   NOTIFICATION DOT
+   ========================================================= */
+
+.whatsapp-notification {
+
+    position: absolute;
+
+    top: -3px;
+    right: -2px;
+
+    width: 19px;
+    height: 19px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        #ff2d2d;
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    border:
+        2px solid #ffffff;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,.20);
+
+    animation:
+        notificationPulse 1.6s ease-in-out infinite;
+}
+
+
+@keyframes notificationPulse {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+
+}
+
+
+/* =========================================================
+   CHAT LABEL
+   ========================================================= */
+
+.whatsapp-label {
+
+    margin-top: 9px;
+
+    padding: 7px 13px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20d968,
+            #10b94f
+        );
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 7px 20px
+        rgba(0,180,80,.25);
+
+    pointer-events: none;
+
+    animation:
+        labelFloat 3s ease-in-out infinite;
+}
+
+
+@keyframes labelFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+}
+
+
+/* =========================================================
+   POPUP MESSAGE
+   ========================================================= */
+
+.whatsapp-popup {
+
+    position: absolute;
+
+    right: 0;
+    bottom: 112px;
+
+    width: 235px;
+
+    padding: 17px 38px 17px 18px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.97);
+
+    border:
+        1.5px solid
+        rgba(37,211,102,.60);
+
+    box-shadow:
+
+        0 15px 45px
+        rgba(0,100,80,.18),
+
+        0 0 25px
+        rgba(37,211,102,.18);
+
+    backdrop-filter:
+        blur(15px);
+
+    -webkit-backdrop-filter:
+        blur(15px);
+
+    pointer-events: auto;
+
+    opacity: 0;
+
+    transform:
+        translateY(15px)
+        scale(.92);
+
+    visibility: hidden;
+
+    animation:
+        popupAppear 6s ease-in-out infinite;
+}
+
+
+/* popup arrow */
+
+.whatsapp-popup::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 27px;
+    bottom: -9px;
+
+    width: 17px;
+    height: 17px;
+
+    background:
+        #ffffff;
+
+    border-right:
+        1.5px solid
+        rgba(37,211,102,.60);
+
+    border-bottom:
+        1.5px solid
+        rgba(37,211,102,.60);
+
+    transform:
+        rotate(45deg);
+}
+
+
+/* =========================================================
+   POPUP ANIMATION
+   ========================================================= */
+
+@keyframes popupAppear {
+
+    0%,
+    8% {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(15px)
+            scale(.92);
+    }
+
+    15%,
+    72% {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+    82%,
+    100% {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(15px)
+            scale(.92);
+    }
+
+}
+
+
+/* =========================================================
+   POPUP TEXT
+   ========================================================= */
+
+.whatsapp-popup-title {
+
+    color:
+        #123f42;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+
+.whatsapp-popup-text {
+
+    color:
+        #536b70;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.whatsapp-close {
+
+    position: absolute;
+
+    top: 8px;
+    right: 9px;
+
+    width: 23px;
+    height: 23px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        transparent;
+
+    color:
+        #8c9a9d;
+
+    font-size: 20px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+.whatsapp-close:hover {
+
+    background:
+        rgba(0,0,0,.06);
+
+    color:
+        #123f42;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .whatsapp-widget {
+
+        right: 16px;
+        bottom: 18px;
+
+        width: 75px;
+        height: 100px;
+    }
+
+
+    .whatsapp-button {
+
+        width: 54px;
+        height: 54px;
+    }
+
+
+    .whatsapp-icon,
+    .whatsapp-icon svg {
+
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .whatsapp-label {
+
+        font-size: 10px;
+
+        padding:
+            6px 10px;
+
+        margin-top: 7px;
+    }
+
+
+    .whatsapp-popup {
+
+        right: 0;
+
+        bottom: 102px;
+
+        width: 215px;
+
+        padding:
+            15px 34px 15px 15px;
+    }
+
+}
