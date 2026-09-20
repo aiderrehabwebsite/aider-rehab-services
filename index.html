@@ -2525,34 +2525,38 @@
 
 
 <!-- =========================================================
-     MENU SCRIPT
+     MOBILE MENU SCRIPT
      ========================================================= -->
 
 <script>
 
-    const menuButton =
-        document.getElementById("menuButton");
+const menuButton =
+    document.getElementById("menuButton");
 
-    const navbar =
-        document.getElementById("navbar");
+const navbar =
+    document.getElementById("navbar");
 
-    menuButton.addEventListener("click", () => {
+
+if (menuButton && navbar) {
+
+    menuButton.addEventListener("click", function () {
 
         navbar.classList.toggle("show");
 
     });
 
 
-    document.querySelectorAll(".navbar a")
-        .forEach(link => {
+    navbar.querySelectorAll("a").forEach(function(link) {
 
-            link.addEventListener("click", () => {
+        link.addEventListener("click", function() {
 
-                navbar.classList.remove("show");
-
-            });
+            navbar.classList.remove("show");
 
         });
+
+    });
+
+}
 
 </script>
 
