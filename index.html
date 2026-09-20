@@ -2682,6 +2682,34 @@ function resetSlider() {
 resetSlider();
 
 </script>
+<script>
 
+const whatsappClose =
+    document.querySelector(".whatsapp-close");
+
+const whatsappPopup =
+    document.querySelector(".whatsapp-popup");
+
+
+if (whatsappClose && whatsappPopup) {
+
+    whatsappClose.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        whatsappPopup.style.animation =
+            "none";
+
+        whatsappPopup.style.opacity =
+            "0";
+
+        whatsappPopup.style.visibility =
+            "hidden";
+
+    });
+
+}
+
+</script>
 </body>
 </html>
