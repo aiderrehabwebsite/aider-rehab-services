@@ -6082,3 +6082,302 @@ h1 span {
     padding-top: 35px !important;
 }
 
+/* =========================================================
+   AIDER - PREMIUM OUR APPROACH SECTION
+   Lightweight / No continuous animation
+   ========================================================= */
+
+#approach {
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            #07145f 0%,
+            #091b68 55%,
+            #12345f 100%
+        ) !important;
+}
+
+
+/* Subtle decorative circles */
+
+#approach::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    left: -250px;
+    top: -180px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    box-shadow:
+        0 0 0 35px rgba(255,255,255,.025),
+        0 0 0 70px rgba(255,255,255,.018);
+
+    pointer-events: none;
+}
+
+
+#approach::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: -180px;
+    bottom: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(60,190,80,.10),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* Main layout */
+
+#approach .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Left side */
+
+#approach .approach-left {
+    position: relative;
+}
+
+
+#approach .approach-left::after {
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+    height: 4px;
+
+    left: 0;
+    bottom: -28px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #4caf32,
+            #29d7d0
+        );
+}
+
+
+/* Main heading */
+
+#approach h2 {
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+}
+
+
+#approach h2 span {
+    color:
+        #4caf32;
+}
+
+
+/* Right content */
+
+#approach .approach-right {
+    border-left:
+        1px solid
+        rgba(255,255,255,.14);
+
+    padding-left: 40px;
+}
+
+
+/* Subtitle */
+
+#approach .approach-right > h3 {
+    margin-top: 0;
+
+    margin-bottom: 14px;
+
+    color: #ffffff;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 25px;
+
+    line-height: 1.35;
+}
+
+
+/* Description */
+
+#approach .approach-right > p {
+    color:
+        rgba(255,255,255,.78);
+
+    line-height: 1.75;
+
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   APPROACH STEPS
+   ========================================================= */
+
+#approach .approach-steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+
+/* Individual step */
+
+#approach .approach-step {
+    position: relative;
+
+    padding: 18px 20px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid
+        rgba(255,255,255,.11);
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        border-color .25s ease;
+}
+
+
+/* Hover only */
+
+#approach .approach-step:hover {
+    transform:
+        translateY(-3px);
+
+    background:
+        rgba(255,255,255,.09);
+
+    border-color:
+        rgba(76,175,50,.45);
+}
+
+
+/* Number */
+
+#approach .approach-step-number {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color:
+        #4caf32;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* Step title */
+
+#approach .approach-step strong {
+    display: block;
+
+    color:
+        #ffffff;
+
+    font-size: 14px;
+}
+
+
+/* Small green line */
+
+#approach .approach-step::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 18px;
+
+    width: 3px;
+    height: 24px;
+
+    border-radius:
+        0 5px 5px 0;
+
+    background:
+        #4caf32;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    #approach .approach-right {
+        border-left: none;
+
+        border-top:
+            1px solid
+            rgba(255,255,255,.14);
+
+        padding-left: 0;
+
+        padding-top: 30px;
+
+        margin-top: 35px;
+    }
+
+
+    #approach .approach-steps {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    #approach .approach-step {
+        padding: 16px 18px;
+    }
+
+}
