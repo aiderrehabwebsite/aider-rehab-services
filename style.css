@@ -7490,3 +7490,19 @@ h1 span {
         grid-template-columns: 1fr;
     }
 }
+.centre-detail-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+.centre-detail {
+    width: auto !important;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    .centre-detail-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
