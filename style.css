@@ -7474,3 +7474,19 @@ h1 span {
     color: #2e8b2e;
     border-color: #b9ddb9;
 }
+.centre-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.centre-detail {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    .centre-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
