@@ -7552,57 +7552,23 @@ h1 span {
 
 /* Outer metal loop */
 
-.paper-clip::before {
-    content: "";
-
+.paper-clip {
     position: absolute;
+    top: -20px;
+    right: 38px;
 
-    left: 4px;
-    top: 0;
+    width: 55px;
+    height: auto;
 
-    width: 31px;
-    height: 70px;
+    z-index: 20;
 
-    border: 3px solid #8b949b;
+    transform: rotate(8deg);
 
-    border-radius: 17px;
+    filter:
+        drop-shadow(2px 4px 3px rgba(0, 0, 0, 0.22));
 
-    background: transparent;
-
-    box-sizing: border-box;
-
-    /* Metallic highlight */
-    box-shadow:
-        inset 2px 0 0 rgba(255,255,255,0.75),
-        inset -1px 0 0 rgba(70,70,70,0.20);
+    pointer-events: none;
 }
-
-
-/* Inner metal loop */
-
-.paper-clip::after {
-    content: "";
-
-    position: absolute;
-
-    left: 11px;
-    top: 8px;
-
-    width: 17px;
-    height: 52px;
-
-    border: 2px solid #c3c9ce;
-
-    border-radius: 11px;
-
-    background: transparent;
-
-    box-sizing: border-box;
-
-    box-shadow:
-        inset 1px 0 0 rgba(255,255,255,0.9);
-}
-
 
 /* =========================================
    PAPER EDGE SHADOW
