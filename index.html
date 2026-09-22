@@ -3141,5 +3141,59 @@ if (whatsappClose && whatsappPopup) {
 }
 
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const elements = document.querySelectorAll(
+        ".section-label, " +
+        ".section h2, " +
+        ".section > .container > p, " +
+        ".service-card, " +
+        ".program-card, " +
+        ".professional-card, " +
+        ".why-card, " +
+        ".talk-card, " +
+        ".centre-detail, " +
+        ".profile-detail"
+    );
+
+    elements.forEach((element, index) => {
+        element.classList.add("scroll-reveal");
+
+        const delay = index % 5;
+
+        if (delay === 1) element.classList.add("scroll-delay-1");
+        if (delay === 2) element.classList.add("scroll-delay-2");
+        if (delay === 3) element.classList.add("scroll-delay-3");
+        if (delay === 4) element.classList.add("scroll-delay-4");
+    });
+
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                    obs.unobserve(entry.target);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+});
+</script>    
 </body>
 </html>
