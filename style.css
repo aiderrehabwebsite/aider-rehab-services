@@ -6811,3 +6811,28 @@ h1 span {
 #mariya {
     scroll-margin-top: 130px;
 }
+/* =========================================================
+   AIDER - HERO PHOTO BACKGROUND
+   ========================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.96) 0%,
+            rgba(255,255,255,0.88) 42%,
+            rgba(255,255,255,0.35) 72%,
+            rgba(255,255,255,0.12) 100%
+        ),
+        url("hero-background.png") center center / cover no-repeat !important;
+}
+@media (max-width: 700px) {
+
+    .hero {
+        background-position: center center;
+    }
+
+}
