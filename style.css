@@ -7682,3 +7682,40 @@ h1 span {
         bottom: 25px;
     }
 }
+#team {
+    position: relative;
+    overflow: hidden;
+
+    background-image: url("team-wood-background.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+    padding: 90px 0;
+}
+
+/* White paper sheet */
+#team::before {
+    content: "";
+    position: absolute;
+
+    top: 45px;
+    bottom: 45px;
+    left: 5%;
+    right: 5%;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 20px 45px rgba(60, 40, 20, 0.25),
+        0 3px 8px rgba(0, 0, 0, 0.08);
+
+    z-index: 0;
+}
+
+#team > * {
+    position: relative;
+    z-index: 1;
+}
