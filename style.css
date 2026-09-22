@@ -6873,3 +6873,21 @@ h1 span {
         ),
         url("approach-background.png") center center / cover no-repeat !important;
 }
+/* =========================================================
+   AIDER - SERVICES PHOTO BACKGROUND
+   ========================================================= */
+
+.services-section {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(247, 250, 248, 0.92) 0%,
+            rgba(247, 250, 248, 0.82) 35%,
+            rgba(247, 250, 248, 0.58) 65%,
+            rgba(247, 250, 248, 0.35) 100%
+        ),
+        url("services-background.png") center center / cover no-repeat !important;
+}
