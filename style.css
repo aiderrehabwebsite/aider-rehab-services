@@ -7535,21 +7535,20 @@ h1 span {
 .paper-clip {
     position: absolute;
 
-    /* Top-left corner */
+    /* RIGHT EDGE */
     top: -18px;
-    left: 38px;
+    right: 38px;
+    left: auto;
 
     width: 42px;
     height: 78px;
 
     z-index: 20;
 
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
 
-    /* Clip shadow */
     filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.20));
 }
-
 
 /* Outer metal loop */
 
