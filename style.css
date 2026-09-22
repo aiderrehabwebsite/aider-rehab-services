@@ -7607,7 +7607,7 @@ h1 span {
             rgba(238, 226, 207, 0.18),
             rgba(238, 226, 207, 0.18)
         ),
-        url("team-wood-background.jpg")
+        url("team-wood-background.png")
         center center / cover no-repeat !important;
 
     padding: 90px 0;
