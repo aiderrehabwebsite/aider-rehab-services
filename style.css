@@ -7291,7 +7291,7 @@ h1 span {
    AIDER - PROGRAMS BACKGROUND
    ========================================================= */
 
-.programs-section {
+#programs {
     position: relative;
     overflow: hidden;
 
@@ -7299,7 +7299,7 @@ h1 span {
         linear-gradient(
             90deg,
             rgba(248, 252, 251, 0.88) 0%,
-            rgba(248, 252, 251, 0.76) 45%,
+            rgba(248, 252, 251, 0.78) 45%,
             rgba(248, 252, 251, 0.72) 100%
         ),
         url("programs-background.png")
