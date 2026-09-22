@@ -6963,3 +6963,42 @@ h1 span {
 .services-section .section-label {
     color: #63e34a;
 }
+/* =========================================================
+   AIDER - MOBILE PERFORMANCE OPTIMIZATION
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Disable expensive blur effects */
+    .service-card,
+    .service-list-item,
+    .approach-features > div {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    /* Reduce heavy shadows */
+    .service-card,
+    .service-list-item,
+    .approach-features > div {
+        box-shadow: none !important;
+    }
+
+    /* Reduce background rendering load */
+    .services-section,
+    .approach-section,
+    .hero {
+        background-attachment: scroll !important;
+    }
+
+    /* Disable decorative pseudo-elements */
+    .approach-section::before,
+    .approach-section::after {
+        display: none !important;
+    }
+
+    /* Keep transitions lightweight */
+    * {
+        transition-duration: 0.15s !important;
+    }
+}
