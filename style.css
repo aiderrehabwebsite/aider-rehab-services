@@ -6729,75 +6729,77 @@ h1 span {
    AIDER - PROFESSIONALS 5 CARD LAYOUT
    ========================================================= */
 
-.profile-grid {
+.professionals-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
     align-items: stretch;
 }
 
-.profile-grid .profile-card {
+.professional-card {
     min-width: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Keep profile card content aligned */
-.profile-grid .profile-card > * {
-    flex-shrink: 0;
+.professional-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Name alignment */
-.profile-grid .profile-card h3 {
+.professional-content h3 {
     min-height: 52px;
     display: flex;
     align-items: flex-start;
 }
 
-/* Qualification / role alignment */
-.profile-grid .profile-card p {
+.professional-content p {
     min-height: 44px;
 }
 
-/* Profile button stays at the bottom */
-.profile-grid .profile-card a {
+.professional-content a {
     margin-top: auto;
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
+
+/* TABLET */
 
 @media (max-width: 1100px) {
-    .profile-grid {
+
+    .professionals-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 18px;
     }
+
 }
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+
+/* MOBILE */
 
 @media (max-width: 750px) {
-    .profile-grid {
+
+    .professionals-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
     }
 
-    .profile-grid .profile-card h3 {
+    .professional-content h3,
+    .professional-content p {
         min-height: auto;
     }
 
-    .profile-grid .profile-card p {
-        min-height: auto;
-    }
 }
 
+
+/* SMALL MOBILE */
+
 @media (max-width: 520px) {
-    .profile-grid {
+
+    .professionals-grid {
         grid-template-columns: 1fr;
         gap: 18px;
     }
+
 }
