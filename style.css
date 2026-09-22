@@ -7305,3 +7305,88 @@ h1 span {
         url("programs-background.png")
         center center / cover no-repeat !important;
 }
+/* =========================================================
+   AIDER - SERVICES LIGHT THEME
+   ========================================================= */
+
+#services {
+    position: relative;
+    overflow: hidden;
+
+    color: #08206f;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248, 252, 251, 0.94),
+            rgba(238, 249, 247, 0.88)
+        ),
+        url("services-background.png")
+        center center / cover no-repeat !important;
+}
+
+/* Keep section text readable */
+
+#services h2,
+#services h3,
+#services p,
+#services strong,
+#services .service-category {
+    color: #08206f;
+}
+
+/* Section label */
+
+#services .section-label {
+    color: #3fae2a;
+}
+
+/* Service cards */
+
+#services .service-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid rgba(8, 32, 111, 0.08);
+
+    box-shadow:
+        0 12px 35px rgba(8, 32, 111, 0.07);
+}
+
+/* First highlighted card */
+
+#services .service-card:first-child {
+    background: #0b1b70;
+    color: #fff;
+}
+
+#services .service-card:first-child h3,
+#services .service-card:first-child p,
+#services .service-card:first-child strong {
+    color: #fff;
+}
+
+/* Category headings */
+
+#services .service-category {
+    color: #08206f;
+}
+
+/* Hover */
+
+#services .service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(8, 32, 111, 0.12);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    #services .service-card:hover {
+        transform: none;
+    }
+
+}
