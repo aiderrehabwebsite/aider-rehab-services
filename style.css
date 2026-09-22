@@ -7076,3 +7076,214 @@ h1 span {
     }
 
 }
+/* =========================================================
+   AIDER PROGRAMS - PREMIUM ANIMATED CARDS
+   ========================================================= */
+
+.program-card {
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid rgba(10, 30, 100, 0.10);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+/* Animated top light */
+
+.program-card::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 85%;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #4caf32,
+        #20c9d8,
+        transparent
+    );
+
+    transition: left 0.75s ease;
+}
+
+/* Soft animated corner glow */
+
+.program-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    right: -90px;
+    bottom: -90px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(76, 175, 50, 0.16),
+        transparent 70%
+    );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+   ========================================================= */
+
+.program-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(76, 175, 50, 0.38);
+
+    box-shadow:
+        0 18px 45px rgba(10, 30, 100, 0.13);
+}
+
+.program-card:hover::before {
+    left: 120%;
+}
+
+.program-card:hover::after {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   PROGRAM NUMBER
+   ========================================================= */
+
+.program-card .program-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 95px;
+    height: 30px;
+
+    padding: 0 13px;
+
+    border-radius: 30px;
+
+    background: rgba(76, 175, 50, 0.08);
+
+    color: #4caf32;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.program-card:hover .program-number {
+    background: rgba(76, 175, 50, 0.15);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(76, 175, 50, 0.12);
+}
+
+
+/* =========================================================
+   PROGRAM TITLE
+   ========================================================= */
+
+.program-card h3 {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.program-card:hover h3 {
+    transform: translateX(3px);
+
+    color: #18348f;
+}
+
+
+/* =========================================================
+   PROGRAM DESCRIPTION
+   ========================================================= */
+
+.program-card p {
+    transition: color 0.3s ease;
+}
+
+
+/* =========================================================
+   LIST ITEMS
+   ========================================================= */
+
+.program-card li {
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+.program-card:hover li {
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   MOBILE - LIGHTWEIGHT
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .program-card {
+        transition:
+            transform 0.25s ease,
+            border-color 0.25s ease;
+    }
+
+    .program-card:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+
+    .program-card:hover::before {
+        left: -120%;
+    }
+
+    .program-card:hover::after {
+        opacity: 0;
+    }
+
+    .program-card:hover .program-number {
+        transform: none;
+
+        box-shadow: none;
+    }
+
+    .program-card:hover h3 {
+        transform: none;
+    }
+
+}
