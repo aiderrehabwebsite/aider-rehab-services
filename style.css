@@ -7506,3 +7506,38 @@ h1 span {
         grid-template-columns: 1fr !important;
     }
 }
+.paper-profile {
+    position: relative;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08),
+        0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e8e8e8;
+    margin-top: 35px;
+}
+
+.paper-clip {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    width: 28px;
+    height: 58px;
+    border: 3px solid #9aa0a6;
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    transform: translateX(-50%) rotate(2deg);
+    z-index: 5;
+}
+
+.paper-clip::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 14px;
+    height: 47px;
+    border-right: 2px solid #c4c8cc;
+    border-bottom: 2px solid #c4c8cc;
+    border-radius: 0 0 10px 0;
+}
