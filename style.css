@@ -7834,39 +7834,47 @@ h1 span {
 }
 
 
-/* YouTube */
+/* =========================================================
+   YOUTUBE BUTTON
+   ========================================================= */
 
 .youtube-static-button {
-    position: absolute;
+    position: absolute !important;
 
-    right: 8px;
-    bottom: 88px;   /* WhatsApp-ൽ നിന്ന് കൂടുതൽ അകലം */
+    right: 8px !important;
+    bottom: 88px !important;
 
-    width: 46px;
-    height: 46px;
+    width: 46px !important;
+    height: 46px !important;
 
-    border-radius: 50%;
+    padding: 0 !important;
+    margin: 0 !important;
 
-    background: #ff0000;
-    color: #fff;
+    border: none !important;
+    outline: none !important;
+    border-radius: 50% !important;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #ff0000 !important;
+    color: #ffffff !important;
 
-    text-decoration: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 20px !important;
+    font-weight: 700 !important;
 
-    box-shadow:
-        0 5px 15px rgba(255, 0, 0, 0.28);
+    cursor: pointer !important;
+
+    z-index: 99999 !important;
+
+    pointer-events: auto !important;
+
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.28);
 
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
-
-    z-index: 10;
 }
 
 .youtube-static-button:hover {
