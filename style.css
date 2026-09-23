@@ -7824,3 +7824,56 @@ h1 span {
         bottom: 25px;
     }
 }
+/* =========================================
+   YOUTUBE ABOVE WHATSAPP
+   ========================================= */
+
+.whatsapp-widget {
+    position: fixed;
+    z-index: 9999;
+}
+
+
+/* YouTube */
+
+.youtube-static-button {
+    position: absolute;
+
+    right: 6px;
+    bottom: 70px;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: #ff0000;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 15px rgba(255, 0, 0, 0.28);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Small hover effect */
+
+.youtube-static-button:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 7px 20px rgba(255, 0, 0, 0.35);
+}
