@@ -7839,8 +7839,8 @@ h1 span {
 .youtube-static-button {
     position: absolute;
 
-    right: 6px;
-    bottom: 70px;
+    right: 8px;
+    bottom: 88px;   /* WhatsApp-ൽ നിന്ന് കൂടുതൽ അകലം */
 
     width: 46px;
     height: 46px;
@@ -7848,7 +7848,6 @@ h1 span {
     border-radius: 50%;
 
     background: #ff0000;
-
     color: #fff;
 
     display: flex;
@@ -7866,10 +7865,9 @@ h1 span {
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
+
+    z-index: 10;
 }
-
-
-/* Small hover effect */
 
 .youtube-static-button:hover {
     transform: scale(1.08);
