@@ -7640,3 +7640,31 @@ h1 span {
     position: relative;
     z-index: 1;
 }
+.professionals-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch;
+}
+
+.professional-card {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    .professionals-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .professionals-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
