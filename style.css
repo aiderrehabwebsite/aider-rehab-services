@@ -8536,3 +8536,8 @@ footer.footer .footer-bottom p {
     object-fit: cover !important;
     object-position: center bottom !important;
 }
+.rameesa-photo img {
+    object-fit: contain !important;
+    object-position: center center !important;
+    background: #f3f3f3;
+}
