@@ -2886,128 +2886,120 @@
 
         <div class="contact-form-wrapper">
 
-            <form class="contact-form"
-                  action="mailto:aiderrehabservices@gmail.com"
-                  method="post"
-                  enctype="text/plain">
+    <form class="contact-form" onsubmit="sendWhatsAppEnquiry(event)">
 
-                <h3>
-                    Send an Enquiry
-                </h3>
+        <h3>
+            Send an Enquiry
+        </h3>
 
-                <p>
-                    Fill in your details and we'll get back to you.
-                </p>
+        <p>
+            Fill in your details and we'll get back to you.
+        </p>
 
 
-                <div class="form-row">
+        <div class="form-row">
 
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                    >
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
 
-                    <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Phone Number"
-                        required
-                    >
-
-                </div>
-
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    required
-                >
-
-
-                <select name="service">
-
-                    <option value="">
-                        Select a Service
-                    </option>
-
-                    <option>
-                        Behaviour Therapy
-                    </option>
-
-                    <option>
-                        Play Therapy
-                    </option>
-
-                    <option>
-                        Remedial Training
-                    </option>
-
-                    <option>
-                        Early Intervention
-                    </option>
-
-                    <option>
-                        Speech &amp; Communication Guidance
-                    </option>
-
-                    <option>
-                        Sensory Skill Training
-                    </option>
-
-                    <option>
-                        Psychological Counselling
-                    </option>
-
-                    <option>
-                        Psychological Assessment
-                    </option>
-
-                    <option>
-                        Parent Guidance
-                    </option>
-
-                    <option>
-                        STUDYHUB
-                    </option>
-
-                    <option>
-                        Parent Workshop
-                    </option>
-
-                    <option>
-                        Teenage Workshop
-                    </option>
-
-                </select>
-
-
-                <textarea
-                    name="message"
-                    rows="5"
-                    placeholder="How can we help?"
-                ></textarea>
-
-
-                <button
-                    type="submit"
-                    class="btn btn-primary">
-
-                    Send Enquiry →
-
-                </button>
-
-            </form>
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+            >
 
         </div>
 
-    </div>
 
-</section>
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+        >
 
-</main>
+
+        <select name="service" required>
+
+            <option value="">
+                Select a Service
+            </option>
+
+            <option value="Behaviour Therapy">
+                Behaviour Therapy
+            </option>
+
+            <option value="Play Therapy">
+                Play Therapy
+            </option>
+
+            <option value="Remedial Training">
+                Remedial Training
+            </option>
+
+            <option value="Early Intervention">
+                Early Intervention
+            </option>
+
+            <option value="Speech & Communication Guidance">
+                Speech &amp; Communication Guidance
+            </option>
+
+            <option value="Sensory Skill Training">
+                Sensory Skill Training
+            </option>
+
+            <option value="Psychological Counselling">
+                Psychological Counselling
+            </option>
+
+            <option value="Psychological Assessment">
+                Psychological Assessment
+            </option>
+
+            <option value="Parent Guidance">
+                Parent Guidance
+            </option>
+
+            <option value="STUDYHUB">
+                STUDYHUB
+            </option>
+
+            <option value="Parent Workshop">
+                Parent Workshop
+            </option>
+
+            <option value="Teenage Workshop">
+                Teenage Workshop
+            </option>
+
+        </select>
+
+
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="How can we help?"
+            required
+        ></textarea>
+
+
+        <button
+            type="submit"
+            class="btn btn-primary">
+
+            Send Enquiry →
+
+        </button>
+
+    </form>
+
+</div>
 
 
 <!-- =========================================================
