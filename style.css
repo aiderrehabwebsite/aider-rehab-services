@@ -8575,3 +8575,42 @@ footer.footer .footer-bottom p {
     object-position: center;
     border-radius: 30px;
 }
+/* FIX ABOUT SECTION TWO-COLUMN ALIGNMENT */
+
+.about-grid {
+    display: grid !important;
+    grid-template-columns: 0.9fr 1.1fr !important;
+    gap: 70px !important;
+    align-items: center !important;
+}
+
+.about-image {
+    width: 100% !important;
+    height: 500px !important;
+    min-height: 500px !important;
+    border-radius: 30px !important;
+    overflow: hidden !important;
+}
+
+.about-video {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 30px !important;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    .about-image {
+        height: 420px !important;
+        min-height: 420px !important;
+    }
+}
