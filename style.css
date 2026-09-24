@@ -8530,6 +8530,9 @@ footer.footer .footer-bottom p {
     object-fit: cover;
     object-position: center top;
 }
+/* Sreejal photo only */
+
 .sreejal-photo img {
-    object-position: center 25%;
+    object-fit: cover !important;
+    object-position: center bottom !important;
 }
