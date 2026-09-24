@@ -8541,3 +8541,15 @@ footer.footer .footer-bottom p {
     object-position: center center !important;
     background: #f3f3f3;
 }
+/* Fathimathu Rameesa - show full photo */
+#professionals .professional-card:nth-child(3) .professional-photo {
+    background: #f3f3f3;
+}
+
+#professionals .professional-card:nth-child(3) .professional-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+}
