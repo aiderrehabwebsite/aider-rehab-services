@@ -8553,3 +8553,7 @@ footer.footer .footer-bottom p {
     object-position: center center !important;
     transform: none !important;
 }
+/* Disable About section animation */
+#about * {
+    animation: none !important;
+}
